@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1>회원 가입을 환영합니다</h1>
+  <form>
+    <fieldset>
+      <legend>사용자 정보</legend>
+      <ul>
+        <li><label for="id">아이디 <input type="text" id="id" autofocus></label></li>
+        <li><label for="email">이메일 <input type="email" id="email" required></label></li>
+        <li><label for="password">비밀번호 <input type="password" id="password"></label></li>
+        <li><label for="password_check">비밀번호확인 <input type="password" id="password_check" placeholder="비밀번호 재입력해라"></label></li>
+        <li><label for="date">배송 지정 <input type="date"></label>(주문일로부터 최소 3일 이후)</li>
+      </ul>
+
+
+    </fieldset>
+
+    <fieldset>
+      <legend>이벤트와 새로운 소식</legend>
+      <label ><input type="radio" name = "news" value="yes">메일 수신</label>
+      <label ><input type="radio" name="news" value="no">메일 수신 안함</label>
+    </fieldset>
+  </form>
+  <input type="submit" value="가입하기">
+  <input type="reset" value="취소">
+  <p></p>
+
+  <form action="">
+    <fieldset>
+      <label for="아아이디">아이디 : <input type="text" id = "아아이디" autofocus placeholder="아이디를 입력하시오"></label>
+      <label for="비비밀">비밀번호 : <input type="password" id =비비밀></label>
+      <input type="image" src="./images/login.png" alt="로그인">
+    </fieldset>
+
+  </form>
+
+  <form action="">
+   
+      <input type="button" value="공지 창 열기" onclick="window.open('notice.html')">
+
+
+  </form>
+  
+</body>
+</html>

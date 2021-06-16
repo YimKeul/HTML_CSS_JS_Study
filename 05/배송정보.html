@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/form2.css">
+    <title>Document</title>
+  </head>
+  <body>
+
+    <h1>레드향 주문하기</h1>
+    <form action="">
+      <legend>배송 정보</legend>
+      <fieldset>
+
+        <ul id="shipping">
+        <li>
+          <label for="상품"
+            >주문 상품 <input type="text" id="상품" value="상품용 3KG" readonly/></label>
+        </li>
+        <li>
+          <label for="이름">이름 <input type="text" id="이름" autofocus required/></label>
+        </li>
+        <li>
+          <label for="배송주소"
+            >배송 주소 <input type="text" id="배송주소" required
+          /></label>
+        </li>
+        <li>
+          <label for="이메일">이메일 <input type="email" id="이메일" /></label>
+        </li>
+        <li>
+          <label for="연락처">연락처 <input type="tel" id="연락처" placeholder="하이폰 빼고 입력해주세요.(01012345678)" required/></label>
+        </li>
+        <li>
+          <label for="배송 지정"
+            >배송 지정 <input type="date" id="배송 지정" /></label
+          ><small>(주문일로부터 최소 3일 이후)</small>
+        </li>
+      </ul>
+      </fieldset>
+    </form>
+    <div>
+    <input type="submit" value="주문하기">
+    <input type="reset" value="취소하기">
+  </div>
+  </body>
+</html>
