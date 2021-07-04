@@ -27,9 +27,6 @@ function onMouseUp (event) {
 }
 
 
-function onMouseLeave (event){
-  stopPainting()
-} 
 
 if(canvas){
   canvas.addEventListener("mousemove" ,onMouseMove)//마우스 포인터 동작확인
