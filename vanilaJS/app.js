@@ -1,6 +1,14 @@
 const canvas = document.getElementById("jsCanvas")
+const ctx = canvas.getContext("2d")
+
+ctx.strokeStyle = "#2c2c2c";
+ctx.lineWidth = 2.5;
 
 let painting = false
+
+function startPainting() {
+  painting = true;
+}
 
 function stopPainting () {
   painting = false;
@@ -13,24 +21,36 @@ function onMouseMove(event) {
 
     const y = event.offsetY
     //console.log(x , y)
+    if(!painting){
+      ctx.beginPath();
+      ctx.moveTo(x,y);
+    }else{
+      ctx.lineTo(x,y);
+      ctx.stroke();
+    }
 }
 
-//마우스 클릭
-function onMouseDown (event) {
+
+
+
+//startPainting 으로 대체
+// //마우스 클릭
+// function onMouseDown (event) {
   
-  painting = true
-}
+//   painting = true
+// }
 
+//stopPainting으로 대체
 //마우스 클릭 해제
-function onMouseUp (event) {
-  stopPainting()
-}
+// function onMouseUp (event) {
+//   stopPainting()
+// }
 
 
 
 if(canvas){
   canvas.addEventListener("mousemove" ,onMouseMove)//마우스 포인터 동작확인
-  canvas.addEventListener("mousedown", onMouseDown)
-  canvas.addEventListener("mouseup" , onMouseUp)
+  canvas.addEventListener("mousedown", startPainting)
+  canvas.addEventListener("mouseup" , stopPainting)
   canvas.addEventListener("mouseleave" , stopPainting)
 }
