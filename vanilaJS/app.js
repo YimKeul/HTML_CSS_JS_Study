@@ -1,8 +1,12 @@
 const canvas = document.getElementById("jsCanvas")
 
-function onMouseMove (event) {
-  console.log(event)
+function onMouseMove(event) {
+    //확인용 
+    //console.log(event)
+    const x = event.offsetX
 
+    const y = event.offsetY
+    //console.log(x , y)
 }
 
 if(canvas){
