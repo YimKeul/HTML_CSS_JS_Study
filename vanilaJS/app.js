@@ -1,7 +1,8 @@
 const canvas = document.getElementById("jsCanvas")
 const ctx = canvas.getContext("2d")
+const color = document.getElementsByClassName("jsColor")
 
-ctx.strokeStyle = "#2c2c2c";
+
 ctx.lineWidth = 2.5;
 
 canvas.width = 700
@@ -26,6 +27,7 @@ function onMouseMove(event) {
     //console.log(x , y)
     if(!painting){
       ctx.beginPath();
+      //path는 선
       ctx.moveTo(x,y);
     }else{
       ctx.lineTo(x,y);
@@ -49,7 +51,12 @@ function onMouseMove(event) {
 //   stopPainting()
 // }
 
-
+function handleColor(event){
+  
+  const colors = event.target.style.backgroundColor
+ // console.log(colors)
+  ctx.strokeStyle = colors
+}
 
 if(canvas){
   canvas.addEventListener("mousemove" ,onMouseMove)//마우스 포인터 동작확인
@@ -57,3 +64,7 @@ if(canvas){
   canvas.addEventListener("mouseup" , stopPainting)
   canvas.addEventListener("mouseleave" , stopPainting)
 }
+
+//console.log(Array.from(color))
+
+Array.from(color).forEach(color => color.addEventListener("click" ,handleColor))
