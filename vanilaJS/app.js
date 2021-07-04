@@ -1,7 +1,7 @@
 const canvas = document.getElementById("jsCanvas")
 const ctx = canvas.getContext("2d")
 const color = document.getElementsByClassName("jsColor")
-
+const range = document.getElementById("jsMode")
 
 ctx.lineWidth = 2.5;
 
@@ -58,6 +58,10 @@ function handleColor(event){
   ctx.strokeStyle = colors
 }
 
+function handleRangeChange(event){
+  console.log(event)
+}
+
 if(canvas){
   canvas.addEventListener("mousemove" ,onMouseMove)//마우스 포인터 동작확인
   canvas.addEventListener("mousedown", startPainting)
@@ -66,5 +70,10 @@ if(canvas){
 }
 
 //console.log(Array.from(color))
+if(color){
+  Array.from(color).forEach(color => color.addEventListener("click" ,handleColor))
+}
 
-Array.from(color).forEach(color => color.addEventListener("click" ,handleColor))
+if(range){
+  range.addEventListener("input", handleRangeChange)
+}
