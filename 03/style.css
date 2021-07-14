@@ -1,0 +1,13 @@
+header{
+  background-color : black ;
+}
+
+section{
+  background-color : orange;
+  height: 500px;
+}
+
+footer{
+  background-color: yellow;
+  height: 50px;
+}
