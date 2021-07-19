@@ -5,7 +5,6 @@
 }
 
 body {
-    background-color: var(--top-color);
     margin: auto;
     width: 100%;
     background-image: url("./image/bg.png");
@@ -17,6 +16,7 @@ body {
 
 /* 상단 메뉴 */
 .Top_Menu {
+    /* background-color: orange; */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -25,7 +25,6 @@ body {
     position: absolute;
     width: 100%;
     height: var(--top-margin);
-    z-index: 1;
     background-color: var(--top-color);
 }
 
@@ -54,10 +53,6 @@ body {
     list-style: none;
     padding: 0;
 }
-.Top__sections li:hover{
-    color:rgb(250, 227, 1);
-    text-decoration: underline;
-  }
 
 .Top__sections li {
     padding-right: 20px;
@@ -92,9 +87,10 @@ body {
     margin-bottom: 5px;
 }
 .sub_text {
-    font-size: 21px;
+    font-size: 5vh;
 }
 #dynamic {
+    /*7/14 11:27 신찬우 수정*/
     position:relative;
     display: inline-block;
     font-size: 100px;
@@ -129,92 +125,35 @@ body {
 }
 
 .github_image {
-    max-width: 100%;
-    margin-bottom:15%;
-    /* position: relative; */
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10%;
 }
-
-/* Hide the images by default */
-.mySlides {
-    display: none;
-  }
-  
-  /* Next & previous buttons */
-  .prev, .next {
-   
-    cursor: pointer;
-    position : relative;  
-    padding: 16px;
-    color: black;
-    font-weight: bold;
-    font-size: 30px;
-    transition: 0.6s ease;
-    user-select: none;
-
-    transition: all 0.1s ease-in-out;
-  }
-  
-  /* Position the "next button" to the right */
-  .next {
-    right: -10%;
-    margin-right: 10%;
-  
-  }
-  .prev:hover, .next:hover {
-    color : white;
-    
-  }
-  
-  /* Caption text */
-  /* .text {
-    color: white;
-    font-size: 15px;
-    padding: 8px 12px;
-    width: 100%;
-    text-align: center;
-  } */
-    
-    /* The dots/bullets/indicators */
-  /* .dot {
-    cursor: pointer;
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
-  } */
-  
-  /* .active, .dot:hover {
-    background-color: #717171;
-  } */
-  
-  /* Fading animation */
-  .fade {
-    -webkit-animation-name: fade;
-    -webkit-animation-duration: 1s;
-    animation-name: fade;
-    animation-duration: 1s;
-  }
-  
-  @-webkit-keyframes fade {
-    from {opacity: .8}
-    to {opacity: 1}
-  }
-  
-  @keyframes fade {
-    from {opacity: .8}
-    to {opacity: 1}
-  }
 
 .github_image img {
     border-radius: 8%;
-    width: 70%;
-    height: 50%;
-    margin-bottom: 3%;
+    width: 99%;
+    height: 99%;
 }
 
+
+
+figcaption {
+    border-radius: 8%;
+    color: #fff;
+
+    padding: 1em;
+    line-height: 1;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+figure {
+    position: relative;
+    margin: 0;
+    line-height: 0;
+}
 
 
 
@@ -232,7 +171,7 @@ body {
     flex-direction: row;
     margin-bottom: 10%;
 }
-.nomad {
+.namad {
     margin-right: 200px;
 }
 .clone_result img {
@@ -247,27 +186,6 @@ body {
     height: 125px;
 }
 
-
-.flip-box:hover .flip {
-    transform: rotateY(-180deg);
-  }
-  .flip {
-    transform-style: preserve-3d;
-    transform: rotateY(0deg);
-    transition: .5s;
-  }
-  
-  .FP,
-  .clone_result{
-    backface-visibility: hidden;
-  }
-  
-  .clone_result{
-    transform: rotateY(180deg);
-    width: 500px;
-    height: 480px;
-  }
-
 /*언어 이미지*/
 .Skill_image_container {
     text-align: center;
@@ -278,35 +196,19 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     margin-right: 2rem;
-    margin-bottom: 100px;
+    margin-bottom: 200px;
     box-shadow: 0 3px 6px rgb(0 0 0 / 20%), 0 3px 6px rgb(0 0 0 / 20%);
-}
-.html_icon:hover {
-    background-color: rgb(0, 0, 0);
-    color: rgb(255, 255, 255);
-    transition: 1.25s;
-}
-
-.css_icon:hover {
-    background-color: rgb(0, 0, 0);
-    color: rgb(255, 255, 255);
-    transition: 1.25s;
-}
-
-.js_icon:hover {
-    background-color: rgb(0, 0, 0);
-    color: rgb(255, 255, 255);
-    transition: 1.25s;
 }
 
 /* 세션2 */
-li,ul {
+li,
+ol,
+ul {
     list-style: none;
 }
 
 .Sec_2 {
     margin: 0 5%;
-    margin-bottom: 200px;
     padding: 0 10%;
 }
 
@@ -315,19 +217,14 @@ li,ul {
     justify-content: space-around;
     font-size: large;
     font-weight: bolder;
-    color : rgb( 33,15,127);
     background-color: aliceblue;
     padding: 20px 20px;
     border-radius: 15px;
 }
-.clicked{
-    color : rgb(180,128,204);
-}
 
 .Sec_2 .sec2__nameList li:hover {
     cursor: pointer;
-    transform: scale(1.1);
-    color : rgb(180,128,204);
+    transform: scale(1.1)
 }
 
 .hidden {
@@ -375,7 +272,7 @@ li,ul {
 
 /* 푸터 */
 footer {
-    background-color: rgb(222, 228, 250);
+    /* background-color: yellow; */
     height: 150px;
     width: 100%;
     bottom: 0;
@@ -385,7 +282,6 @@ footer {
 }
 
 .logo img {
-    margin-top: 20px;
     width: 200px;
     height: 50px;
 }
@@ -398,7 +294,3 @@ footer {
     color: aquamarine;
     
 }
-
-
-  
-
