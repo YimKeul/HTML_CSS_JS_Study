@@ -2,17 +2,25 @@
     --top-margin: 80px;
     --top-color: rgb(222, 228, 250);
     --chat-height: 50px;
+    --color-skyblue: rgb(178, 199, 217);
+    --color-yellow: rgb(225, 235, 51);
 }
-
+@font-face {
+    font-family: "gmarket";
+    src: url("./font/GmarketSansTTFMedium.ttf");
+}
 body {
+    font-family: "gmarket";
     background-color: var(--top-color);
     margin: auto;
     width: 100%;
     background-image: url("./image/bg.png");
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
     overflow-x:hidden; 
     overflow-y:auto;
+
 }
 
 /* 상단 메뉴 */
@@ -31,7 +39,7 @@ body {
 
 .downdown {
     position: fixed;
-    animation: down 0.3s ease;
+    animation: down 0.8s ease;
 }
 
 @keyframes down {
@@ -54,10 +62,6 @@ body {
     list-style: none;
     padding: 0;
 }
-.Top__sections li:hover{
-    color:rgb(250, 227, 1);
-    text-decoration: underline;
-  }
 
 .Top__sections li {
     padding-right: 20px;
@@ -85,6 +89,7 @@ body {
     height: 100vh;
     color: black;
     width: 100%;
+    margin-bottom: 10%;
 }
 .main_text {
     font-size: 4vh;
@@ -93,7 +98,10 @@ body {
 }
 .sub_text {
     font-size: 21px;
+    
+    display: none;
 }
+
 #dynamic {
     position:relative;
     display: inline-block;
@@ -125,7 +133,7 @@ body {
 }
 .sec1_text h2 {
     margin-top: 50px;
-    margin-bottom: 100px;
+    margin-bottom: 10%;
 }
 
 .github_image {
@@ -141,29 +149,25 @@ body {
   
   /* Next & previous buttons */
   .prev, .next {
-   
+
     cursor: pointer;
     position : relative;  
     padding: 16px;
     color: black;
     font-weight: bold;
-    font-size: 30px;
+    font-size: 18px;
     transition: 0.6s ease;
     user-select: none;
-
-    transition: all 0.1s ease-in-out;
+    /* text-align: center; */
   }
   
   /* Position the "next button" to the right */
   .next {
     right: -10%;
-    margin-right: 10%;
+    margin-right: 10.5%;
   
   }
-  .prev:hover, .next:hover {
-    color : white;
-    
-  }
+  
   
   /* Caption text */
   /* .text {
@@ -223,50 +227,67 @@ body {
     margin-top: 80px;
     margin-bottom: 30px;
     text-align: center; 
-}
-
-.clonecoding {
+  }
+  
+  .clonecoding {
+    margin-top: 10%;
     padding: 10px;
     justify-content: center;
     display: flex;
     flex-direction: row;
     margin-bottom: 10%;
-}
-.nomad {
+  }
+  .nomad {
     margin-right: 200px;
-}
-.clone_result img {
+  }
+  .clone_result img {
     width: 500px;
     height: 480px;
-
-}
-
-.FP img {
+  }
+  
+  
+  .FP img{
     border-radius: 100%;
-    width: 125px;
-    height: 125px;
-}
-
-
-.flip-box:hover .flip {
-    transform: rotateY(-180deg);
+    width: 300px;
+    position:relative;
+    top:190px;
+    transition: all 0.2s;
   }
-  .flip {
-    transform-style: preserve-3d;
-    transform: rotateY(0deg);
-    transition: .5s;
+  .nomad .clone_result{
+    /* display: block;
+      position: relative; 
+    left:-800px; */
+    opacity: 0;
+    
+    
+  }
+  .elie .clone_result{
+    opacity: 0;
+  
   }
   
-  .FP,
-  .clone_result{
-    backface-visibility: hidden;
+  .nomad:hover .FP{
+    position: relative;
+    top:-300px;
   }
   
-  .clone_result{
-    transform: rotateY(180deg);
-    width: 500px;
-    height: 480px;
+  .nomad:hover .clone_result{
+    /* right:800px; */
+    opacity: 1;
+   
   }
+  .elie:hover .FP{
+    position: relative;
+    top:-300px;
+  }
+  .elie:hover .clone_result{
+    /* display: block;
+    position: relative; */
+    /* right: -800px; */
+    opacity:1;
+    
+  }
+  
 
 /*언어 이미지*/
 .Skill_image_container {
@@ -334,15 +355,54 @@ li,ul {
     display: none;
 }
 
-.Sec_2 .project_list ul {
-    padding: 10px 20px;
-    background-color: rgb(228, 231, 188);
+/* 채팅창 배경 */
+.chatting {
+    background-color: var(--color-skyblue);
 }
 
-.chat {
+/* 채팅창 날짜 */
+.chatDate {
     display: flex;
+    flex-basis: 100%;
+    align-items: center;
+    font-size: 15px;
+    padding-top: 10px;
+}
+
+.chatDate::before,
+.chatDate::after {
+    content: "";
+    flex-grow: 1;
+    background: rgba(0, 0, 0, 0.35);
+    height: 0.5px;
+    margin: 0px 16px;
+}
+
+/* 채팅 시작 */
+.chatting .project_list {
+    margin: 0px 20px;
+}
+
+/* 말풍선 공통 스타일 */
+.chat_qu_col, .chat_an_col {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.chat__clock {
+    align-self: flex-end;
+    padding-bottom: 5px;
+    font-size: 13px;
+}
+
+/* 질문자 채팅 말풍선 */
+.chat_qu {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: stretch;
     margin: 32px 0;
-    height: auto;
 }
 
 .avatar_image {
@@ -351,41 +411,80 @@ li,ul {
     height: var(--chat-height);
 }
 
-.basic_chatting {
-    display: flex;
+.chat__name {
+    margin-left: 22px;
+    text-align: start;
+}
+
+.chat_qu_col .chat__main {
     padding: 15px 18px;
     background-color: white;
-    border-radius: 40px;
-    align-items: center;
-    max-width: 50%;
+    position:relative;
+    margin: 5px 5px 5px 20px;  
+    border-radius: 10px;
 }
 
-#reply {
-    justify-content: flex-end;
-    height: auto;
+.chat_qu_col .chat__main::after {
+    content:"";
+    border-top: 15px solid white;
+    border-left: 15px solid transparent;
+    border-right: 0px solid transparent;
+    border-bottom: 0px solid transparent;
+    position: absolute;
+    top: 10px;
+    left: -15px;
 }
 
-.chat_project {
-    width: 100%;
-    height: auto;
-    max-width: 550px;
-    padding: 24px 32px;
-    border-radius: 40px;
+/* 우리의 채팅 말풍선 */
+.chat_an {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: 15px 0;
 }
+
+.chat_an_col .chat__main {
+    padding: 15px 18px;
+    background-color: var(--color-yellow);
+    position:relative;
+    margin: 5px 20px 5px 5px;
+    border-radius: 10px;
+    text-align: start;
+}
+.chat_an_col .chat__main::before {
+    content:"";
+    border-top: 15px solid var(--color-yellow);
+    border-left: 0px solid transparent;
+    border-right: 15px solid transparent;
+    border-bottom: 0px solid transparent;
+    position: absolute;
+    top: 10px;
+    right: -15px;
+} 
 
 /* 푸터 */
 footer {
+    /* margin-top: 5%; */
     background-color: rgb(222, 228, 250);
-    height: 150px;
-    width: 100%;
-    bottom: 0;
+    /* height: auto;
+    width: 100%; */
+    padding: 3%;
+    
+    
 }
 .ff {
     text-align: center;
 }
 
+footer .link{
+    margin-bottom: 2%;
+    
+}
+
+
 .logo img {
-    margin-top: 20px;
+    margin-bottom: 2%;
     width: 200px;
     height: 50px;
 }
@@ -399,6 +498,7 @@ footer {
     
 }
 
-
-  
-
+  .Top__sections li:hover{
+    color:yellow;
+    text-decoration: underline;
+  }
