@@ -1,13 +1,14 @@
 body{
   margin: 0;
-  min-height: 100%;
+  /* min-height: 100%; */
   background-color:darkgray;
   text-align: center;
+  
 }
 
 .HEADER{
   background-color: red;
-  margin-bottom: 5%;
+  margin-bottom: 2%;
 }
 
 .HEADER .Menu .BTN{ 
@@ -23,34 +24,63 @@ body{
 
 
 .INTRO{
-  background-color: red;
-  margin-bottom: 5%;
+  background-color: blanchedalmond;
+  margin-bottom: 2%;
 }
 
 .PERSONAL{
-  background-color: red;
-  margin-bottom: 5%;
+  background-color: blanchedalmond;
+  margin-bottom: 2%;
+
+
+
+}
+
+.PERSONAL .P_UP{
+  width: 100%;
+  display: flex;
+  
+  /* justify-content: space-around; */
+  justify-content: space-evenly;
+
+
+}
+.PERSONAL .P_DOWN{
+  width: 100%;
+  display: flex;
+
+  /* justify-content: space-around; */
+  justify-content: space-evenly;
+  
 }
 
 .SKILL{
-  background-color: red;
-  margin-bottom: 5%;
+  background-color: blanchedalmond;
+  margin-bottom: 2%;
 }
 
 .GIT{
-  background-color: red;
-  margin-bottom: 5%;
+  /* width: 100%; */
+  background-color: blanchedalmond;
+margin-bottom: 2%;
+}
+.GIT .calendar{
+  width: 55%;
+  background-color: white;
+
 }
 
+
+
 .PROJECT{
-  background-color: red;
+  background-color: blanchedalmond;
   margin-bottom: 5%;
 }
 
 
 
 .FOOTER{
-  background-color: red;
+  background-color: blanchedalmond;
 
   bottom: 0;
   width: 100%;

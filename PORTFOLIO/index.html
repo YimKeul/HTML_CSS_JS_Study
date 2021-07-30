@@ -1,47 +1,89 @@
 <!DOCTYPE html>
 <html lang="ko">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1"/>
-        <link rel="stylesheet" href="./style.css">
-        <title>SeJun's Portfolio</title>
-    </head>
-    <body>
-      <header class="HEADER">
-        HEADER
-        <div class="Menu">
-          <div class="BTN Main_Logo">(버튼)Portfolio</div>
-          <div class="BTN Personal">(버튼)personal</div>
-          <div class="BTN Skill">(버튼)skills</div>
-          <div class="BTN Git">(버튼)git</div>
-          <div class="BTN Project">(버튼)project</div>
-        </div>
-     
-      </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>SeJun's Portfolio</title>
+  </head>
+  <body>
+    <!-- Prepare a container for your calendar. -->
+    <script src="https://cdn.rawgit.com/IonicaBizau/github-calendar/gh-pages/dist/github-calendar.min.js"></script>
 
-      <section class="INTRO">
-        INTRO
-      </section>
-      
-      <section class="PERSONAL">
-        PERSONAL
-        <div class="P_Name"></div>
-        <div class="P_Birth"></div>
-        <div class="P_Adress"></div>
-        <div class="P_Phone"></div>
-        <div class="P_E-mail"></div>
-        <div class="P_Education"></div>
-      </section>
-      <section class="SKILL">SKILL</section>
-      <section class="GIT">GIT</section>
-      <section class="PROJECT">PROJECT</section>
-      
-      <footer class="FOOTER">
-        FOOTER
-      </footer>
+    <!-- Optionally, include the theme (if you don't want to struggle to write the CSS) -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.rawgit.com/IonicaBizau/github-calendar/gh-pages/dist/github-calendar.css"
+    />
 
 
+    <header class="HEADER">
+      HEADER
+      <div class="Menu">
+        <div class="BTN Main_Logo">(버튼)Portfolio</div>
+        <div class="BTN Personal">(버튼)personal</div>
+        <div class="BTN Skill">(버튼)skills</div>
+        <div class="BTN Git">(버튼)git</div>
+        <div class="BTN Project">(버튼)project</div>
+      </div>
+    </header>
 
+    <section class="INTRO">
+      INTRO
+      <div class="I_Name">
+        <h1>이세준</h1>
+        <h1>주니어 개발자 포트폴리오</h1>
+      </div>
+    </section>
 
-    </body>
+    <section class="PERSONAL">
+      PERSONAL
+      <br />
+      <br />
+      <div class="P_UP">
+        <div class="P_Name">이름</div>
+        <div class="P_Birth">생년월일</div>
+        <div class="P_Adress">주소지</div>
+      </div>
+      <div class="P_DOWN">
+        <div class="P_Phone">전화번호</div>
+        <div class="P_E-mail">이메일</div>
+        <div class="P_Education">학력</div>
+      </div>
+    </section>
+
+    <section class="SKILL">
+      SKILL
+      <br />
+      <br />
+      JAVA C Python JAVA SCRIPT HTML CSS REACT Native
+    </section>
+
+    <section class="GIT">
+      GIT<br /><br />
+      <div class="calendar">
+        Loading the data just for you.
+      </div>
+      <br><br>
+      <script>
+        new GitHubCalendar(".calendar", "YimKeul");
+      </script>
+    </section>
+
+    <section class="PROJECT">PROJECT
+      <br><br>
+      군 장병 모바일 휴가증
+      <br>
+      웹사이트 제작 스터디
+      <br>
+      스타트업(예정)
+    </section>
+
+    <footer class="FOOTER">FOOTER
+      <br><br>
+      깃, 블로그, 인스타
+      <br>
+      저작권
+    </footer>
+  </body>
 </html>
