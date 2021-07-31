@@ -88,6 +88,11 @@ background-color: blanchedalmond;
   
 }
 
+.SKILL p{
+  margin: 0;
+  background-color:red;
+}
+
 
 /*GIT*/
 .GIT{
@@ -105,7 +110,10 @@ background-color: blanchedalmond;
 /*PROJECT*/
 .PROJECT{
   background-color: blanchedalmond;
-
+}
+.PROJECT p{
+  margin: 0;
+  background-color: red;
 }
 
 
@@ -118,3 +126,8 @@ background-color: blanchedalmond;
   bottom: 0;
   width: 100%;
 } 
+
+.FOOTER p{
+  margin: 0%;
+  background-color: red;
+}
