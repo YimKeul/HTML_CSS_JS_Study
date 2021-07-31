@@ -13,7 +13,7 @@
 body{
   margin: 0;
   /* min-height: 100%; */
-  background-color:darkgray;
+  /* background-color:darkgray; */
   /* text-align: center; */
   
 }
@@ -24,22 +24,24 @@ body{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: blue; /*색 변경해야함*/
+  /* background-color: blue; 색 변경해야함 */
   padding: 8px 12px;
   }
 
-  a{
+  .navbar a{ 
     text-decoration: none;
-    color: white;
+    color: black;
   }
 
-  .navbar_logo{
+  .navbar_logo a{
     font-size: 24px;
-    color :white;
+    color :black;
   }
 
   .navbar_logo i{
-    color : yellow
+    padding-left: 10px;
+    font-size: 24px;
+    color : rgb(209, 206, 17);
   }
 
   .navbar_menu{
@@ -47,10 +49,28 @@ body{
     list-style: none;
     padding-left:0;
   }
-  .navbar_menu li:hover{
-    background-color:orange;
-    border-radius: 25px;
+  
+  .navbar_menu li a{
+    position: relative;
+    transition: .3s;
   }
+
+  .navbar_menu li a::after{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    content: '';
+    width: 0;
+    height: 2px;
+    background-color: red;
+    transition: .3s;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+  }
+  .navbar_menu li a:hover::after{
+    width: 100%;
+  }
+
 
   .navbar_menu li{
     padding: 8px 12px;
@@ -63,29 +83,65 @@ body{
     display: none;
   }
 
+  .navbar_toogleBTN i{
+    color : black;
+  }
+
   @media screen and (max-width : 768px) {
     .navbar{
+     
       flex-direction: column;
       align-items: flex-start;
-      padding: 8px 24px;
+      padding : 20px 0px;
+      
+   
     }
+    .navbar_logo{
+      width: 100%;
+   
+    }
+    /*메인 로고*/
+    .navbar_logo a{
+    
+      color :black;
+
+    }
+    /*메인 글자*/
+    .navbar_logo i{
+      
+      color: black;
+    }
+    .navbar_menu a{
+      color: white;
+    }
+
     .navbar_menu{
+      background-color: black;
       display: none;
       flex-direction: column ;
       align-items: center;
       width: 100%;
+      margin-bottom: 0;
     }
 
     .navbar_menu li{
       width: 100%;
-      text-align: center;
+      text-align: left;
+      
     }
     .navbar_toogleBTN{
       display: block;
+   
     }
-
     .navbar_menu.active{
       display: flex;
+    }
+    .navbar.active{
+      padding-bottom: 0;
+  
+    }
+    .navbar_logo i.active{
+      color: rgb(185, 175, 32);
     }
   }
 
