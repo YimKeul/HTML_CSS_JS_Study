@@ -1,3 +1,20 @@
+@media (max-width: 480px) {
+
+  .HEADER .Menu .BTN{
+
+    display: none;
+  }
+  .HEADER .Menu .Main_Logo{
+    visibility: visible;
+     display: inline-block;
+     background-color: blue;
+  }
+}
+
+
+
+
+/*body*/
 body{
   margin: 0;
   /* min-height: 100%; */
@@ -5,41 +22,50 @@ body{
   text-align: center;
   
 }
-
+/*HEADER*/
 .HEADER{
   background-color: red;
-  margin-bottom: 2%;
+  /* margin-bottom: 3%; */
 }
 
 .HEADER .Menu .BTN{ 
   background-color: blue;
   color: white;
   float: right;
-  
+  /* display: none; */
 }
 .HEADER .Menu .Main_Logo {
   background-color:green;
   float: left;
+  
 }
 
 
+
+/*INTRO*/
 .INTRO{
+  width: 100%;
+  background-color: red;
+}
+.INTRO .I_Name{
+background-color: blanchedalmond;
+}
+.INTRO .I_Subtag{
   background-color: blanchedalmond;
-  margin-bottom: 2%;
 }
 
+
+/*PERSONAL*/
 .PERSONAL{
-  background-color: blanchedalmond;
-  margin-bottom: 2%;
-
-
-
+  background-color: red;
+  
 }
 
 .PERSONAL .P_UP{
   width: 100%;
   display: flex;
-  
+  background-color: blanchedalmond;
+
   /* justify-content: space-around; */
   justify-content: space-evenly;
 
@@ -48,37 +74,44 @@ body{
 .PERSONAL .P_DOWN{
   width: 100%;
   display: flex;
+  background-color: blanchedalmond;
 
   /* justify-content: space-around; */
   justify-content: space-evenly;
   
 }
 
+
+/*SKILL*/
 .SKILL{
   background-color: blanchedalmond;
-  margin-bottom: 2%;
+  
 }
 
+
+/*GIT*/
 .GIT{
   /* width: 100%; */
   background-color: blanchedalmond;
-margin-bottom: 2%;
+  
 }
-.GIT .calendar{
-  width: 55%;
-  background-color: white;
-
+.GIT img{
+ margin-bottom: 5%;
+ max-width: 100%;
+ 
 }
 
 
-
+/*PROJECT*/
 .PROJECT{
   background-color: blanchedalmond;
-  margin-bottom: 5%;
+
 }
 
 
 
+
+/*FOOTER*/
 .FOOTER{
   background-color: blanchedalmond;
 
