@@ -13,7 +13,7 @@
 body{
   margin: 0;
   /* min-height: 100%; */
-  /* background-color:darkgray; */
+  background-color:darkgray;
   /* text-align: center; */
   
 }
@@ -24,7 +24,7 @@ body{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* background-color: blue; 색 변경해야함 */
+  background-color: whitesmoke; 
   padding: 8px 12px;
   }
 
@@ -49,32 +49,34 @@ body{
     list-style: none;
     padding-left:0;
   }
+  @media (min-width : 1204px) {
+    .navbar_menu li a{
+      position: relative;
+      transition: .3s;
+    }
   
-  .navbar_menu li a{
-    position: relative;
-    transition: .3s;
+    .navbar_menu li a::after{
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      content: '';
+      width: 0;
+      height: 2px;
+      background-color: red;
+      transition: .3s;
+      -webkit-transform: translateX(-50%);
+      transform: translateX(-50%);
+    }
+    .navbar_menu li a:hover::after{
+      width: 100%;
+    }
+  
+  
+    .navbar_menu li{
+      padding: 8px 12px;
+    }
   }
 
-  .navbar_menu li a::after{
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    content: '';
-    width: 0;
-    height: 2px;
-    background-color: red;
-    transition: .3s;
-    -webkit-transform: translateX(-50%);
-    transform: translateX(-50%);
-  }
-  .navbar_menu li a:hover::after{
-    width: 100%;
-  }
-
-
-  .navbar_menu li{
-    padding: 8px 12px;
-  }
 
   .navbar_toogleBTN{
     position: absolute;
@@ -127,6 +129,7 @@ body{
     .navbar_menu li{
       width: 100%;
       text-align: left;
+      padding: 10px 0px;
       
     }
     .navbar_toogleBTN{
