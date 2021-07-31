@@ -1,23 +1,35 @@
 <!DOCTYPE html>
 <html lang="ko">
   <head>
+    <!-- 아이콘 -->
+    <script src="https://kit.fontawesome.com/d9c3150fda.js" crossorigin="anonymous"></script>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+    <meta name="viewport" content="width=device-width, maximum-scale=1.0, minimum-scale=1, user-scalable=yes,initial-scale=1.0" />
     <link rel="stylesheet" href="./style.css" />
+    <script src="./main.js" defer></script>
     <title>SeJun's Portfolio</title>
   </head>
   <body>
-    <header class="HEADER">
-      HEADER
-      <div class="Menu">
-        <div class="BTN Main_Logo">(버튼)Portfolio</div>
-
-        <div class="BTN Project">(버튼)project</div>
-        <div class="BTN Git">(버튼)git</div>
-        <div class="BTN Skill">(버튼)skills</div>
-        <div class="BTN Personal">(버튼)personal</div>
+   
+   <!-- 네비게이션바 -->
+    <nav class="navbar">
+      <div class="navbar_logo">
+        <i class="far fa-lightbulb"></i>
+        <a href="">Portfolio</a>
       </div>
-    </header>
+    
+      <ul class="navbar_menu">
+        <li><a href="">Personal</a></li>
+        <li><a href="">Skills</a></li>
+        <li><a href="">Git</a></li>
+        <li><a href="">Projcet</a></li>
+      </ul>
+
+      <a href="#" class="navbar_toogleBTN"><i class="fas fa-bars"></i></a>
+    </nav>
+
+  
     <br>
 
     <section class="INTRO">
@@ -29,9 +41,6 @@
 
     <section class="PERSONAL">
       PERSONAL
-      
-      <!-- <br />
-      <br /> -->
       <div class="P_UP">
         <div class="P_Name">이름</div>
         <div class="P_Birth">생년월일</div>
