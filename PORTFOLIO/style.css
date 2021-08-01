@@ -91,12 +91,9 @@ body{
 
   @media screen and (max-width : 768px) {
     .navbar{
-     
       flex-direction: column;
       align-items: flex-start;
       padding : 20px 0px;
-      
-   
     }
     .navbar_logo{
       width: 100%;
@@ -155,14 +152,41 @@ body{
 /*INTRO*/
 .INTRO{
   width: 100%;
-  background-color: red;
+  background-color: blanchedalmond;
 }
-.INTRO .I_Name{
+.INTRO .I_Title{
+padding-top: 2.5rem;
 background-color: blanchedalmond;
+text-align: center;
+color: black;
+font-size: 45px;
+
 }
 .INTRO .I_Subtag{
   background-color: blanchedalmond;
 }
+
+.I_Line{
+  border: none;
+  width: 80px;
+  height: 3px;
+  background-color: blueviolet;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+
+.INTRO .I_Text{
+  text-align: center;
+  color: gray;
+}
+
+@media screen and (max-width : 768px){
+  .INTRO .I_Title{
+    font-size: 30px;
+  }
+}
+
 
 
 /*PERSONAL*/
