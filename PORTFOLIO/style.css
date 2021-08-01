@@ -22,25 +22,28 @@ body{
 /*navbar*/
 .navbar{
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   background-color: whitesmoke; 
-  padding: 8px 12px;
+  
   }
 
   .navbar a{ 
     text-decoration: none;
     color: black;
+    font-size: 18px;
+    
   }
 
   .navbar_logo a{
-    font-size: 24px;
+    /* font-size: 24px; */
     color :black;
+    font-size: 30px;
   }
 
   .navbar_logo i{
     padding-left: 10px;
-    font-size: 24px;
+    font-size: 30px;
     color : rgb(209, 206, 17);
   }
 
@@ -48,6 +51,7 @@ body{
     display: flex;
     list-style: none;
     padding-left:0;
+    /* font-size: 24px; */
   }
   @media (min-width : 1204px) {
     .navbar_menu li a{
