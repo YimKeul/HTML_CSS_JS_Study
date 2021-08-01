@@ -95,6 +95,7 @@ body{
 
   @media screen and (max-width : 768px) {
     .navbar{
+      justify-content: space-between;
       flex-direction: column;
       align-items: flex-start;
       padding : 20px 0px;
@@ -195,29 +196,81 @@ font-size: 45px;
 
 /*PERSONAL*/
 .PERSONAL{
-  background-color: red;
-  
-}
-
-.PERSONAL .P_UP{
+  background-color: blueviolet;
   width: 100%;
-  display: flex;
-  background-color: blanchedalmond;
-
-  /* justify-content: space-around; */
-  justify-content: space-evenly;
-
-
+ 
 }
-.PERSONAL .P_DOWN{
+
+
+.P_Contents{
+  padding-top: 20px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  margin: 0;
   width: 100%;
-  display: flex;
-  background-color: blanchedalmond;
+  -webkit-box-pack: justify;
+  background-color: aquamarine;
 
-  /* justify-content: space-around; */
-  justify-content: space-evenly;
-  
 }
+.P_C_G{
+  width: 33.3333%;
+  margin-bottom: 2rem;
+}
+
+.P_C_G_I{
+ display: flex; 
+ flex-flow: row nowrap;
+ width: 100%;
+ max-width: 14rem;
+ margin: 0 auto;
+ opacity: .8;
+}
+
+ .P_C_Icon i{
+  width: 2rem;
+  min-width: 2rem;
+  height: 2rem;
+  margin-top: .2rem;
+  margin-right: 2rem;
+}
+
+.P_C_T{
+  flex-flow: row nowrap;
+  width: 100%;
+  max-width: 14rem;
+  margin: 0 auto;
+  opacity: .8;
+}
+.P_C_T_L{
+  margin-bottom: .5rem;
+  font-weight: 700;
+  font-size: 1.25rem;
+}
+
+.P_C_T_V{
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+@media screen and (max-width : 768px){
+  .P_C_G{
+    width: 50%;
+    margin-bottom: 2rem;
+  }
+}
+
+@media screen and (max-width : 576px){
+  .P_C_G{
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+}
+
+
+
+
+
 
 
 /*SKILL*/
