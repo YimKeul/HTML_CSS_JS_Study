@@ -61,7 +61,7 @@ body {
     content: "";
     width: 0;
     height: 2px;
-    background-color: red;
+    background-color: rgb(71, 146, 177);
     transition: 0.3s;
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
@@ -139,7 +139,7 @@ body {
 /*INTRO*/
 .INTRO {
   width: 100%;
-  height: 42em;
+  height: 42.2em;
   background: linear-gradient(
       180deg,
       rgba(112, 93, 80, 0.8) 0,
@@ -156,6 +156,8 @@ body {
   color: white;
   font-size: 45px;
   line-height: 5rem;
+  /*마진 다시 수정해볼것*/
+  margin-bottom: 20px;
 }
 
 .I_Line {
@@ -264,8 +266,13 @@ body {
 /*SKILL*/
 .SKILL {
   background-color: blanchedalmond;
+  text-align: center;
+  
 }
-
+.SKILL .S_Contents{
+  width: 100%;
+  height: 60em;
+}
 .SKILL p {
   margin: 0;
   background-color: red;
@@ -274,6 +281,10 @@ body {
 /*GIT*/
 .GIT {
   /* width: 100%; */
+  text-align: center;
+  background-color: red;
+}
+.GIT .G_C{
   background-color: blanchedalmond;
 }
 .GIT img {
@@ -283,6 +294,7 @@ body {
 
 /*PROJECT*/
 .PROJECT {
+  text-align: center;
   background-color: blanchedalmond;
 }
 .PROJECT p {
@@ -292,13 +304,43 @@ body {
 
 /*FOOTER*/
 .FOOTER {
-  background-color: blanchedalmond;
-
+  text-align: center;
+  background-color: rgb(64, 72, 83);
   bottom: 0;
   width: 100%;
+  color: whitesmoke;
+  padding-bottom: 20px;
+
 }
 
-.FOOTER p {
-  margin: 0%;
-  background-color: red;
+
+
+.F_Links{
+  display: flex;
+  padding-top: 1.5rem;
+  font-size: 4rem;
+  letter-spacing: 20px;
+  justify-content: center;
+ 
+  
 }
+
+.F_Link {
+  cursor: pointer;
+}
+.F_Instar{
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  -webkit-background-clip: text;
+          /* Also define standard property for compatibility */
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
+  
+
+}
+
+@media screen and (max-width: 576px) {
+  .F_Links{
+    font-size: 2.5rem;
+  }
+}
+
