@@ -12,8 +12,10 @@ body {
 
 /*navbar*/
 .navbar {
-  position:fixed; width:100%;height:60px;
-  padding-bottom: 20px;
+  position:fixed; 
+  width:100%;
+  height:auto;
+  /* padding-bottom: 20px; */
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -99,7 +101,8 @@ body {
     justify-content: space-between;
     flex-direction: column;
     align-items: flex-start;
-    padding: 20px 0px;
+    /* padding-bottom: 40px; */
+    
   }
   .navbar_logo {
     width: 100%;  
@@ -126,15 +129,18 @@ body {
     flex-direction: column;
     align-items: center;
     width: 100%;
-    margin-bottom: 0;
+    margin: 0;
+    
   }
 
   .navbar_menu li {
     width: 100%;
     text-align: left;
+    margin: 0;
     padding: 10px 0px;
   }
   .navbar_toogleBTN {
+    margin-top: 40px;
     display: block;
    
  
@@ -146,6 +152,12 @@ body {
     padding-bottom: 0;
   }
 
+}
+
+@media screen and (max-width: 480px) {
+  .navbar_toogleBTN{
+    margin-top: 50px;
+  }
 }
 
 /*INTRO*/
