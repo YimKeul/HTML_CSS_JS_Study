@@ -38,7 +38,8 @@ body {
   display: flex;
   list-style: none;
   padding-left: 0;
-  /* font-size: 24px; */
+  vertical-align: middle;
+
 }
 @media (min-width: 1204px) {
   .navbar_menu li a {
@@ -75,6 +76,7 @@ body {
 }
 
 .navbar_toogleBTN i {
+  
   color: black;
 }
 
@@ -86,7 +88,8 @@ body {
     padding: 20px 0px;
   }
   .navbar_logo {
-    width: 100%;
+    width: 100%;  
+    vertical-align: bottom;
     
   }
   /*메인 로고*/
@@ -119,6 +122,8 @@ body {
   }
   .navbar_toogleBTN {
     display: block;
+   
+ 
   }
   .navbar_menu.active {
     display: flex;
@@ -137,85 +142,70 @@ body {
   display: flex;
 }
 
-.INTRO .I_Text {
-  padding-left: 15rem;
-  padding-top: 9rem;
-  text-align: left;
-  color: black;
-  font-size: 38px;
-  line-height: 5rem;
-  
-  margin-bottom: 20px;
-}
-.I_Main_Text{
-  line-height: 4rem;
-  font-weight: bold;
-  
-}
-
-.I_Sub_Text{
-  margin: 0;
-  font-size: 25px;
-
-}
-
-.I_More{
-    width: 20rem;
-    padding: 1rem 0;
-    border-radius: 0;
-    font-size: 16px;
-    border: 0;
-    background: #1f75e8;
-    color: white;
-    cursor: pointer; 
-}
-.INTRO .I_monitor{
- padding-top: 6rem;
- padding-left:  9rem;
-width: auto;
-height: 65%;
-}
-
-.I_test{
-
-  width: auto;
-  height: 50px;
-  z-index: 1;
-}
-
-@media screen and (max-width: 576px) {
-  .INTRO .I_Text {
-   padding-top: 5rem;
-    padding-left: 0;
-    text-align: center;
-  }
-
-  .I_Sub_Text{
-    font-size: 20px;
+  .I_Text {
+    padding-left: 15rem;
+    padding-top: 9rem;
+    text-align: left;
+    color: black;
+    font-size: 38px;
+    line-height: 5rem;
+    
+    margin-bottom: 20px;
   }
   .I_Main_Text{
-    line-height: 3rem;
-    font-size: 30px;
+    line-height: 4rem;
+    font-weight: bold;
+    
   }
+  
+  .I_Sub_Text{
+    margin: 0;
+    font-size: 25px;
+  
+  }
+  
   .I_More{
-    width: 16rem;
+      width: 20rem;
+      padding: 1rem 0;
+      border-radius: 0;
+      font-size: 16px;
+      border: 0;
+      background: #1f75e8;
+      color: white;
+      cursor: pointer; 
   }
- 
-}
+  .I_monitor{
+   padding-top: 6rem;
+   padding-left:  9rem;
+  width: auto;
+  height: 65%;
+  }
 
-@media screen and (max-width: 768px) {
-  .INTRO .I_Text {
+ 
+
+ @media  screen and (max-width: 768px) {
+  body{
+    overflow-x: hidden;
+  }
+
+ .I_Text {
+   padding: 0;
    padding-top: 7rem;
    padding-left: 1rem;
     
   }
+  .I_monitor{
+    padding: 0;
+    width: 480px;
+  
+  }
 
   .I_Sub_Text{
     font-size: 20px;
   }
   .I_Main_Text{
     line-height: 3rem;
-    font-size: 30px;
+    font-size: 28px;
   }
   .I_More{
     width: 16rem;
@@ -223,6 +213,19 @@ height: 65%;
  
 }
 
+@media  screen and (max-width: 480px) {
+  .I_Text{
+    width: 100%;
+    padding: 0;
+    padding-top: 15%;
+    
+    text-align: center;
+  }
+  .I_monitor{
+    display: none;
+  }
+ 
+}
 
 
 /*PERSONAL*/
