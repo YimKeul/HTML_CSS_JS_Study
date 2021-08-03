@@ -1,3 +1,6 @@
+html{
+  scroll-behavior: smooth;
+}
 
 /*body*/
 body {
@@ -84,14 +87,17 @@ body {
   }
   .navbar_logo {
     width: 100%;
+    
   }
   /*메인 로고*/
   .navbar_logo a {
     color: black;
+    vertical-align:middle;
   }
   /*메인 글자*/
   .navbar_logo i {
     color: black;
+   
   }
   .navbar_menu a {
     color: white;
@@ -128,11 +134,12 @@ body {
   width: 100%;
   height: 42.2em;
   background-color: whitesmoke;
+  display: flex;
 }
 
 .INTRO .I_Text {
   padding-left: 15rem;
-  padding-top: 14rem;
+  padding-top: 9rem;
   text-align: left;
   color: black;
   font-size: 38px;
@@ -161,13 +168,20 @@ body {
     background: #1f75e8;
     color: white;
     cursor: pointer; 
-
- 
 }
-html{
-  scroll-behavior: smooth;
+.INTRO .I_monitor{
+ padding-top: 6rem;
+ padding-left:  9rem;
+width: auto;
+height: 65%;
 }
 
+.I_test{
+
+  width: auto;
+  height: 50px;
+  z-index: 1;
+}
 
 @media screen and (max-width: 576px) {
   .INTRO .I_Text {
