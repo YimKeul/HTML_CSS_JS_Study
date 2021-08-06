@@ -60,8 +60,7 @@ project_2.addEventListener("click", () =>
 $(document).ready(function () {
   /*스크롤 내릴때 어바웃 스킬 막대바 애니메이션 */
   $(window).scroll(function () {
-    var scnow = window.scrollY;
-    console.log(scnow)
+
     /*오른쪽 메뉴가 어바웃부터 나타남*/
 
     if ($(this).scrollTop() > 600){

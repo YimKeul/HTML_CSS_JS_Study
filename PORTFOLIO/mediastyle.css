@@ -1,0 +1,101 @@
+/*타블렛*/
+@media screen and (max-width: 1023px) {
+  .navbar {
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar_menu {
+    color: whitesmoke;
+    background-color: black;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    margin: 0;
+  }
+
+  .navbar_menu li {
+    width: 100%;
+    text-align: left;
+    margin: 0;
+    padding: 10px 2px;
+  }
+  .navbar_toogleBTN {
+    margin-top: 40px;
+    display: block;
+  }
+
+  .navbar_menu.active {
+    display: flex;
+  }
+  .navbar.active {
+    padding-bottom: 0;
+  }
+
+
+  body {
+    overflow-x: hidden;
+  }
+
+  .I_Text {
+    padding: 0;
+    padding-top: 7rem;
+    padding-left: 1rem;
+  }
+  .I_monitor {
+    padding: 0;
+    width: 480px;
+  }
+
+  .I_Sub_Text {
+    font-size: 20px;
+  }
+  .I_Main_Text {
+    line-height: 3rem;
+    font-size: 28px;
+  }
+  .I_More {
+    width: 16rem;
+  }
+
+  .P_C_G {
+    width: 50%;
+    margin-bottom: 2rem;
+  }
+}
+/*모바일*/
+@media screen and (max-width: 767px) {
+  /*상단바 이벤트*/
+  .P_C_G {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+  .F_Links {
+    font-size: 2.5rem;
+  }
+  .I_monitor{
+    width: 20rem;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .I_monitor {
+    display: none;
+  }
+  .I_Text {
+    width: 100%;
+    padding: 0;
+    padding-top: 15%;
+
+    text-align: center;
+  }
+
+}
+
+
+
+
+
