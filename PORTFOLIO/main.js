@@ -56,6 +56,19 @@ project_2.addEventListener("click", () =>
 );
 
 
+function open_chatroom(){
+  var windowWidth = $( window ).width();
+  if(windowWidth < 575) {
+  //창 가로 크기가 500 미만일 경우
+ 
+  $("#remote").css({"display" :"none"});
+  } else {
+  //창 가로 크기가 500보다 클 경우
+ 
+  }
+  }
+  
+ 
 
 $(document).ready(function () {
   /*스크롤 내릴때 어바웃 스킬 막대바 애니메이션 */
@@ -68,7 +81,7 @@ $(document).ready(function () {
     } else {
       $("#remote").css({"display" :"none"});
     }
-
+    open_chatroom();
     /*오른쪽 메뉴 스크롤*/
     //어바웃 스크롤
 

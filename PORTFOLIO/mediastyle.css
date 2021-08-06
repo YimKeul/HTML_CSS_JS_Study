@@ -92,6 +92,9 @@
 
     text-align: center;
   }
+  #remote {
+    display: none;
+  }
 
 }
 
