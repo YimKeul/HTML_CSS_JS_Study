@@ -1,18 +1,21 @@
-html{
+html {
   scroll-behavior: smooth;
 }
-
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
 /*body*/
 body {
   margin: 0;
-
   background-color: darkgray;
-  
 }
 
 /*navbar*/
 
-.navbar  {
+.navbar {
   text-decoration: none;
   color: black;
   font-size: 18px;
@@ -23,22 +26,20 @@ body {
   z-index: 1;
 }
 
-
-.navbar_logo{
+.navbar_logo {
   cursor: pointer;
   display: flex;
 }
 
-.navbar_logo p{
-  padding-left : 10px;
+.navbar_logo p {
+  padding-left: 10px;
   padding-top: 30px;
   font-size: 20px;
 }
 
-
-.navbar_logo img{
+.navbar_logo img {
   width: 100px;
-  float:left;
+  float: left;
   vertical-align: middle;
 }
 .navbar_menu {
@@ -46,7 +47,6 @@ body {
   list-style: none;
   padding-top: 10px;
   padding-left: 0;
-
 }
 .navbar_toogleBTN {
   position: absolute;
@@ -59,16 +59,13 @@ body {
   color: black;
 }
 
-
 @media (min-width: 1204px) {
-  .navbar {
-    position:fixed; 
-    width:100%;
-    height:auto;
-  
-  
-  }
-  
+  /* .navbar {
+    position: fixed;
+    width: 100%;
+    height: auto;
+  } */
+
   .navbar_menu li a {
     position: relative;
     transition: 0.3s;
@@ -87,7 +84,7 @@ body {
     transform: translateX(-50%);
   }
   .navbar_menu li a:hover::after {
-   width: 100%;
+    width: 100%;
   }
 
   .navbar_menu li {
@@ -95,11 +92,8 @@ body {
   }
 }
 
-
-
 @media screen and (max-width: 768px) {
   .navbar {
-    
     justify-content: space-between;
     flex-direction: column;
     align-items: flex-start;
@@ -114,15 +108,13 @@ body {
     width: 100%;
     height: auto;
     margin: 0;
-   
-    
   }
+
   .navbar_menu li {
     width: 100%;
     text-align: left;
     margin: 0;
     padding: 10px 2px;
-    
   }
   .navbar_toogleBTN {
     margin-top: 40px;
@@ -131,19 +123,44 @@ body {
 
   .navbar_menu.active {
     display: flex;
-
-    
   }
   .navbar.active {
     padding-bottom: 0;
   }
-
 }
 
 @media screen and (max-width: 480px) {
-  .navbar_toogleBTN{
+  .navbar_toogleBTN {
     margin-top: 50px;
   }
+}
+
+#remote {
+  
+  width: 105px;
+  position: fixed;
+  top: 30%;
+  right: 1%;
+  display: none;
+}
+#remote a {
+  color: #3a3a3a;
+}
+#remote ul:nth-of-type(2) {
+  margin-left: 10px;
+}
+#remote ul {
+  line-height: 230%;
+  padding: 2px;
+}
+#remote ul > li {
+  padding: 0 0 0 5px;
+}
+#remote ul > li:hover {
+  background :#e5e5e5;
+}
+#remote img {
+  margin-right: 7px;
 }
 
 /*INTRO*/
@@ -152,99 +169,89 @@ body {
   height: 42.2em;
   background-color: whitesmoke;
   display: flex;
-  padding-top: 6rem;
-  
+  padding-top: 1rem;
 }
 
-  .I_Text {
-    padding-left: 15rem;
-    padding-top: 9rem;
-    text-align: left;
-    color: black;
-    font-size: 38px;
-    line-height: 5rem;
-    
-    margin-bottom: 20px;
-  }
-  .I_Main_Text{
-    line-height: 4rem;
-    font-weight: bold;
-    
-  }
-  
-  .I_Sub_Text{
-    margin: 0;
-    font-size: 25px;
-  
-  }
-  
-  .I_More{
-      width: 20rem;
-      padding: 1rem 0;
-      border-radius: 0;
-      font-size: 16px;
-      border: 0;
-      background: #1f75e8;
-      color: white;
-      cursor: pointer; 
-  }
-  .I_monitor{
-   padding-top: 6rem;
-   padding-left:  9rem;
+.I_Text {
+  padding-left: 15rem;
+  padding-top: 9rem;
+  text-align: left;
+  color: black;
+  font-size: 38px;
+  line-height: 5rem;
+
+  margin-bottom: 20px;
+}
+.I_Main_Text {
+  line-height: 4rem;
+  font-weight: bold;
+}
+
+.I_Sub_Text {
+  margin: 0;
+  font-size: 25px;
+}
+
+.I_More {
+  width: 20rem;
+  padding: 1rem 0;
+  border-radius: 0;
+  font-size: 16px;
+  border: 0;
+  background: #1f75e8;
+  color: white;
+  cursor: pointer;
+}
+.I_monitor {
+  padding-top: 6rem;
+  padding-left: 9rem;
   width: auto;
   height: 65%;
-  }
+}
 
- 
-
- @media  screen and (max-width: 768px) {
-  body{
+@media screen and (max-width: 768px) {
+  body {
     overflow-x: hidden;
   }
 
- .I_Text {
-   padding: 0;
-   padding-top: 7rem;
-   padding-left: 1rem;
-    
+  .I_Text {
+    padding: 0;
+    padding-top: 7rem;
+    padding-left: 1rem;
   }
-  .I_monitor{
+  .I_monitor {
     padding: 0;
     width: 480px;
-  
   }
 
-  .I_Sub_Text{
+  .I_Sub_Text {
     font-size: 20px;
   }
-  .I_Main_Text{
+  .I_Main_Text {
     line-height: 3rem;
     font-size: 28px;
   }
-  .I_More{
+  .I_More {
     width: 16rem;
   }
- 
 }
 
-@media  screen and (max-width: 480px) {
-  .I_Text{
+@media screen and (max-width: 480px) {
+  .I_Text {
     width: 100%;
     padding: 0;
     padding-top: 15%;
-    
+
     text-align: center;
   }
-  .I_monitor{
+  .I_monitor {
     display: none;
   }
- 
 }
-
 
 /*PERSONAL*/
 .PERSONAL {
- background-color: whitesmoke;
+  background-color: whitesmoke;
   width: 100%;
   color: black;
 }
@@ -264,7 +271,6 @@ body {
   margin: 0;
   width: 100%;
   -webkit-box-pack: justify;
-  
 }
 .P_C_G {
   width: 33.3333%;
@@ -322,17 +328,18 @@ body {
 
 /*SKILL*/
 .SKILL {
-  background-color: blanchedalmond;
+  background-color: whitesmoke;
   text-align: center;
-  
 }
-.SKILL .S_Contents{
+.SKILL .S_Contents {
   width: 100%;
   height: 60em;
 }
-.SKILL p {
-  margin: 0;
-  background-color: red;
+.SKILL .S_Title {
+  padding-top: 2rem;
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 2rem;
 }
 
 /*GIT*/
@@ -368,44 +375,43 @@ body {
   width: 100%;
   color: whitesmoke;
   padding-bottom: 20px;
-
 }
 
-
-
-.F_Links{
+.F_Links {
   display: flex;
   padding-top: 1.5rem;
   font-size: 4rem;
   letter-spacing: 20px;
   justify-content: center;
- 
-  
 }
 
 .F_Link {
   cursor: pointer;
 }
 
-.F_Git{
+.F_Git {
   background: white;
   -webkit-background-clip: text;
   background-clip: text;
--webkit-text-fill-color: transparent;
-}
-.F_Instar{
-  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
-  -webkit-background-clip: text;
-          /* Also define standard property for compatibility */
-          background-clip: text;
   -webkit-text-fill-color: transparent;
-  
-
+}
+.F_Instar {
+  background: radial-gradient(
+    circle at 30% 107%,
+    #fdf497 0%,
+    #fdf497 5%,
+    #fd5949 45%,
+    #d6249f 60%,
+    #285aeb 90%
+  );
+  -webkit-background-clip: text;
+  /* Also define standard property for compatibility */
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 @media screen and (max-width: 576px) {
-  .F_Links{
+  .F_Links {
     font-size: 2.5rem;
   }
 }
-
