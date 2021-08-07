@@ -39,14 +39,18 @@
   body {
     overflow-x: hidden;
   }
-
+  .INTRO{
+    padding-left: 3%;
+    padding-right: 3%;
+  }
   .I_Text {
     padding: 0;
     padding-top: 7rem;
-    padding-left: 1rem;
+    /* padding-left: 1rem; */
   }
   .I_monitor {
     padding: 0;
+    margin-left: 2%;
     width: 480px;
   }
 
@@ -66,9 +70,20 @@
     margin-bottom: 2rem;
   }
   .S_L_Item{
+  
+  }
+
+  .S_Contents i {
+    line-height: 5rem;
+    font-size: 2.5rem;
+
+  }
+  .S_I{
+ 
     position: unset;
     text-align: center;
   }
+
 }
 /*모바일*/
 @media screen and (max-width: 767px) {
@@ -80,9 +95,54 @@
   .F_Links {
     font-size: 2.5rem;
   }
+
   .I_monitor{
-    width: 20rem;
+    
+    width: 50%;
   }
+  .I_Text{
+    padding-left: 4%;
+  }
+
+  .S_L_Item:nth-child(1) {
+    left: 0%
+  }
+  
+  .S_L_Item:nth-child(2) {
+   
+    left: 60%
+  }
+  
+  .S_L_Item:nth-child(3) {
+   
+    left: 0%;
+  }
+  
+  .S_L_Item:nth-child(4) {
+   
+    left: 60%
+  }
+  
+  
+  
+  .S_L_Item:nth-child(5) {
+    left: 00%;
+  }
+  
+  .S_L_Item:nth-child(6) {
+    
+    left: 60%
+  }
+  
+  .S_L_Item:nth-child(7) {
+  
+    left: 0%
+  }
+  .S_L_Item:nth-child(8) {
+    
+    left: 60%
+  }
+
 }
 
 @media screen and (max-width: 575px) {
@@ -93,12 +153,14 @@
     width: 100%;
     padding: 0;
     padding-top: 15%;
-
     text-align: center;
   }
   #remote {
     display: none;
   }
+
+
+
 
 }
 

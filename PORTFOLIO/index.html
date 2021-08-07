@@ -1,252 +1,289 @@
 <!DOCTYPE html>
 <html lang="ko">
-    <head>
-        <!-- 아이콘 -->
-        <script src="https://kit.fontawesome.com/d9c3150fda.js" crossorigin="anonymous"></script>
-        <meta charset="UTF-8"/>
-        <meta
-            name="viewport"
-            content="width=device-width, maximum-scale=1.0, minimum-scale=1, user-scalable=yes,initial-scale=1.0"/>
-        <link rel="stylesheet" href="./style.css"/>
-        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"/>
-        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-        <script src="./main.js" defer="defer"></script>
-        <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
-        <link rel="stylesheet" href="./mediastyle.css"/>
-        <title>SEJUN'S PORTFOLIO</title>
-    </head>
-    <body>
-        <!-- AOS -->
-        <script>
-            AOS.init();
-        </script>
+  <head>
+    <!-- 아이콘 -->
+    <script
+      src="https://kit.fontawesome.com/d9c3150fda.js"
+      crossorigin="anonymous"
+    ></script>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, maximum-scale=1.0, minimum-scale=1, user-scalable=yes,initial-scale=1.0"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./main.js" defer="defer"></script>
+    <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
+    <link rel="stylesheet" href="./mediastyle.css" />
+    <title>SEJUN'S PORTFOLIO</title>
+  </head>
+  <body>
+    <!-- AOS -->
+    <script>
+      AOS.init();
+    </script>
 
-        <!-- 네비게이션바 -->
-        <nav class="navbar" id="navbar">
-            <div class="navbar_logo">
-                <img src="./image/세준.gif" alt="mainlogo"/>
-                <p>'s PORTFOLIO</p>
-            </div>
+    <!-- 네비게이션바 -->
+    <nav class="navbar" id="navbar">
+      <div class="navbar_logo">
+        <img src="./image/세준.gif" alt="mainlogo" />
+        <p>'s PORTFOLIO</p>
+      </div>
 
-            <ul class="navbar_menu">
-                <li class="n_m_a">
-                    <a style="cursor: pointer">About me</a>
-                </li>
-                <li class="n_m_s">
-                    <a style="cursor: pointer">Skills</a>
-                </li>
+      <ul class="navbar_menu">
+        <li class="n_m_a">
+          <a style="cursor: pointer">About me</a>
+        </li>
+        <li class="n_m_s">
+          <a style="cursor: pointer">Skills</a>
+        </li>
 
-                <li class="n_m_p">
-                    <a style="cursor: pointer">Project</a>
-                </li>
-            </ul>
+        <li class="n_m_p">
+          <a style="cursor: pointer">Project</a>
+        </li>
+      </ul>
 
-            <a href="#" class="navbar_toogleBTN">
-                <i class="fas fa-bars"></i>
-            </a>
-        </nav>
+      <a href="#" class="navbar_toogleBTN">
+        <i class="fas fa-bars"></i>
+      </a>
+    </nav>
 
-        <div id="remote" style="display: none">
-            <nav>
-                <ul>
-                    <li id="list1">
-                        <a href="#navbar">
-                            <i class="fas fa-caret-right"></i>
-                            INTRO</a>
-                    </li>
-                    <li id="list2">
-                        <a href="#PERSONAL">
-                            <i class="fas fa-caret-right"></i>
-                            PROFILE</a>
-                    </li>
-                    <li id="list3">
-                        <a href="#SKILL">
-                            <i class="fas fa-caret-right"></i>
-                            SKILL</a>
-                    </li>
-                    <li id="list4">
-                        <a href="#PROJECT">
-                            <i class="fas fa-caret-right"></i>
-                            PROJECT</a>
-                    </li>
-                </ul>
-            </nav>
+    <div id="remote" style="display: none">
+      <nav>
+        <ul>
+          <li id="list1">
+            <a href="#navbar">
+              <i class="fas fa-caret-right"></i>
+              INTRO</a
+            >
+          </li>
+          <li id="list2">
+            <a href="#PERSONAL">
+              <i class="fas fa-caret-right"></i>
+              PROFILE</a
+            >
+          </li>
+          <li id="list3">
+            <a href="#SKILL">
+              <i class="fas fa-caret-right"></i>
+              SKILL</a
+            >
+          </li>
+          <li id="list4">
+            <a href="#PROJECT">
+              <i class="fas fa-caret-right"></i>
+              PROJECT</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <section class="INTRO" id="INTRO">
+      <div class="I_Text">
+        <!-- <hr class="I_Line"/> -->
+
+        <div class="I_Sub_Text">유연하게, 간편하게.</div>
+
+        <div class="I_Main_Text">
+          모두가 만족하는<br />
+          당신과의 만남, 세준
         </div>
 
-        <section class="INTRO" id="INTRO">
-            <div class="I_Text">
-                <!-- <hr class="I_Line"/> -->
+        <button class="I_More">더 알아보기</button>
+      </div>
 
-                <div class="I_Sub_Text">유연하게, 간편하게.</div>
+      <img src="./image/intro_img.png" alt="monitor" class="I_monitor" />
+    </section>
 
-                <div class="I_Main_Text">
-                    모두가 만족하는<br/>
-                    당신과의 만남, 세준
-                </div>
+    <section class="PERSONAL" id="PERSONAL">
+      <div class="P_Title">ABOUT ME</div>
 
-                <button class="I_More">더 알아보기</button>
+      <div class="P_Contents">
+        <div class="P_C_G">
+          <div class="P_C_G_I">
+            <div class="P_C_Icon">
+              <i class="fas fa-id-badge"></i>
             </div>
-
-            <img src="./image/intro_img.png" alt="monitor" class="I_monitor"/>
-        </section>
-
-        <section class="PERSONAL" id="PERSONAL">
-            <div class="P_Title">ABOUT ME</div>
-
-            <div class="P_Contents">
-                <div class="P_C_G">
-                    <div class="P_C_G_I">
-                        <div class="P_C_Icon">
-                            <i class="fas fa-id-badge"></i>
-                        </div>
-                        <div class="P_C_T">
-                            <div class="P_C_T_L">NAME</div>
-                            <div class="P_C_T_V">이세준 (Lee Se Jun)</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="P_C_G">
-                    <div class="P_C_G_I">
-                        <div class="P_C_Icon">
-                            <i class="fas fa-calendar"></i>
-                        </div>
-                        <div class="P_C_T">
-                            <div class="P_C_T_L">AGE</div>
-                            <div class="P_C_T_V">24 (99.02.10)</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="P_C_G">
-                    <div class="P_C_G_I">
-                        <div class="P_C_Icon">
-                            <i class="fas fa-user-tag"></i>
-                        </div>
-                        <div class="P_C_T">
-                            <div class="P_C_T_L">MBTI</div>
-                            <div class="P_C_T_V">ESFJ</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="P_C_G">
-                    <div class="P_C_G_I">
-                        <div class="P_C_Icon">
-                            <i class="fas fa-phone-alt"></i>
-                        </div>
-                        <div class="P_C_T">
-                            <div class="P_C_T_L">PHONE</div>
-                            <div class="P_C_T_V">010-6245-3829</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="P_C_G">
-                    <div class="P_C_G_I">
-                        <div class="P_C_Icon">
-                            <i class="fas fa-envelope-open-text"></i>
-                        </div>
-                        <div class="P_C_T">
-                            <div class="P_C_T_L">MAIL</div>
-                            <div class="P_C_T_V">leesjun29@naver.com</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="P_C_G">
-                    <div class="P_C_G_I">
-                        <div class="P_C_Icon">
-                            <i class="fas fa-graduation-cap"></i>
-                        </div>
-                        <div class="P_C_T">
-                            <div class="P_C_T_L">EDUCATION</div>
-                            <div class="P_C_T_V">
-                                충남대학교
-                                <br/>컴퓨터융합학부<br/>(ChungNam UNIV.)
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="P_C_T">
+              <div class="P_C_T_L">NAME</div>
+              <div class="P_C_T_V">이세준 (Lee Se Jun)</div>
             </div>
-            <br/>
-        </section>
-
-        <section class="SKILL" id="SKILL">
-            <div class="S_Title">SKILL</div>
-            <div class="S_Contents">
-                <i class="fab fa-java"></i>
-                <i class="fab fa-cuttlefish"></i>
-                <i class="fab fa-python"></i>
-                <i class="fab fa-js-square"></i>
-                <i class="fab fa-html5"></i>
-                <i class="fab fa-css3-alt"></i>
-                <i class="fab fa-react"></i>
-                <i class="fab fa-git-alt"></i>
+          </div>
+        </div>
+        <div class="P_C_G">
+          <div class="P_C_G_I">
+            <div class="P_C_Icon">
+              <i class="fas fa-calendar"></i>
             </div>
-            <div class="S_I">
-          
-                <ul class="S_L">
-                
-                    <li class="S_L_Item">
-                        <img src="./image/resize/java.png" alt="java"/>
-                    </li>
-                    <li class="S_L_Item">
-                        <img src="./image/resize/c++.png" alt="c++"/>
-                    </li>
-                    <li class="S_L_Item">
-                        <img src="./image/resize/python.png" alt="python"/>
-                    </li>
-                    <li class="S_L_Item">
-                        <img src="./image/resize/js2.png" alt="js"/>
-                    </li>
-                    <li class="S_L_Item">
-                        <img src="./image/resize/html.png" alt="html"/>
-                    </li>
-                    <li class="S_L_Item">
-                        <img src="./image/resize/css.png" alt="css"/>
-                    </li>
-                    <li class="S_L_Item">
-                        <img src="./image/resize/react.png" alt="react"/>
-                    </li>
-                    <li class="S_L_Item">
-                      <img src="./image/resize/git.png" alt="git">
-                    </li>
-                  </ul>
+            <div class="P_C_T">
+              <div class="P_C_T_L">AGE</div>
+              <div class="P_C_T_V">24 (99.02.10)</div>
             </div>
-        </section>
-
-        <section class="PROJECT" id="PROJECT">
-            <p>PROJECT</p>
-            군 장병 모바일 휴가증
-            <br/>
-            웹사이트 제작 스터디
-            <br/>
-            스타트업(예정)
-            <br/>
-            포트폴리오 사이트 제작(RN으로 App환경에서도 잘 구현되는지 체크된다고 내용추가)
-        </section>
-
-        <footer class="FOOTER">
-            <div class="F_Links">
-                <div class="F_Link F_Git">
-                    <a
-                        href="https://github.com/2021-Frontend-Study/2021_Frontend_Study"
-                        style="text-decoration: none">
-                        <i class="fab fa-github" alt="git"></i>
-                    </a>
-                </div>
-                <div class="F_Link F_Blog">
-                    <a
-                        href="https://blog.naver.com/PostList.naver?from=postList&blogId=mentpark123&categoryNo=14&currentPage=7"
-                        style="text-decoration: none; color: rgb(3, 199, 90)">
-                        <i class="fab fa-blogger" alt="naver_blog"></i>
-                    </a>
-                </div>
-                <div class="F_Link F_Instar">
-                    <a href="https://www.instagram.com/yim_ceul/">
-                        <i class="fab fa-instagram" aria-hidden="true"></i>
-                    </a>
-                </div>
+          </div>
+        </div>
+        <div class="P_C_G">
+          <div class="P_C_G_I">
+            <div class="P_C_Icon">
+              <i class="fas fa-user-tag"></i>
             </div>
+            <div class="P_C_T">
+              <div class="P_C_T_L">MBTI</div>
+              <div class="P_C_T_V">ESFJ</div>
+            </div>
+          </div>
+        </div>
+        <div class="P_C_G">
+          <div class="P_C_G_I">
+            <div class="P_C_Icon">
+              <i class="fas fa-phone-alt"></i>
+            </div>
+            <div class="P_C_T">
+              <div class="P_C_T_L">PHONE</div>
+              <div class="P_C_T_V">010-6245-3829</div>
+            </div>
+          </div>
+        </div>
+        <div class="P_C_G">
+          <div class="P_C_G_I">
+            <div class="P_C_Icon">
+              <i class="fas fa-envelope-open-text"></i>
+            </div>
+            <div class="P_C_T">
+              <div class="P_C_T_L">MAIL</div>
+              <div class="P_C_T_V">leesjun29@naver.com</div>
+            </div>
+          </div>
+        </div>
+        <div class="P_C_G">
+          <div class="P_C_G_I">
+            <div class="P_C_Icon">
+              <i class="fas fa-graduation-cap"></i>
+            </div>
+            <div class="P_C_T">
+              <div class="P_C_T_L">EDUCATION</div>
+              <div class="P_C_T_V">
+                충남대학교
+                <br />컴퓨터융합학부<br />(ChungNam UNIV.)
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br />
+    </section>
 
-            <br/>
-            © LeeSeJun. All rights reserved
-        </footer>
-    </body>
+    <section class="SKILL" id="SKILL">
+      <div class="S_Title">SKILL</div>
+      <div class="S_Contents">
+        <i class="fab fa-java"></i>
+        <i class="fab fa-cuttlefish"></i>
+        <i class="fab fa-python"></i>
+        <i class="fab fa-js-square"></i>
+        <i class="fab fa-html5"></i>
+        <i class="fab fa-css3-alt"></i>
+        <i class="fab fa-react"></i>
+        <i class="fab fa-git-alt"></i>
+      </div>
+
+      <div class="S_I">
+        <div class="S_L_Item">
+          <div class="front">
+            <img src="./image/resize/java.png" alt="java" />
+          </div>
+          <div class="back"><p>test1</p></div>
+        </div>
+        <div class="S_L_Item">
+          <div class="front">
+            <img src="./image/resize/c++.png" alt="c++" />
+          </div>
+          <div class="back"><p>test2</p></div>
+        </div>
+        <div class="S_L_Item">
+          <div class="front">
+            <img src="./image/resize/python.png" alt="python" />
+          </div>
+          <div class="back"><p>test3</p></div>
+        </div>
+        <div class="S_L_Item">
+          <div class="front">
+            <img src="./image/resize/js2.png" alt="js" />
+          </div>
+          <div class="back"><p>test4</p></div>
+        </div>
+
+        <div class="S_L_Item">
+          <div class="front">
+            <img src="./image/resize/html.png" alt="html" />
+          </div>
+          <div class="back"><p>test5</p></div>
+        </div>
+        <div class="S_L_Item">
+          <div class="front">
+            <img src="./image/resize/css.png" alt="css" />
+          </div>
+          <div class="back"><p>test6</p></div>
+        </div>
+        <div class="S_L_Item">
+          <div class="front">
+            <img src="./image/resize/react.png" alt="react" />
+          </div>
+
+          <div class="back"><p>test7</p></div>
+        </div>
+        <div class="S_L_Item">
+          <div class="front">
+            <img src="./image/resize/git.png" alt="git" />
+          </div>
+
+          <div class="back"><p>test8</p></div>
+        </div>
+      </div>
+    </section>
+
+  
+
+    <section class="PROJECT" id="PROJECT">
+      <p>PROJECT</p>
+      군 장병 모바일 휴가증
+      <br />
+      웹사이트 제작 스터디
+      <br />
+      스타트업(예정)
+      <br />
+      포트폴리오 사이트 제작(RN으로 App환경에서도 잘 구현되는지 체크된다고
+      내용추가)
+    </section>
+
+    <footer class="FOOTER">
+      <div class="F_Links">
+        <div class="F_Link F_Git">
+          <a
+            href="https://github.com/2021-Frontend-Study/2021_Frontend_Study"
+            style="text-decoration: none"
+          >
+            <i class="fab fa-github" alt="git"></i>
+          </a>
+        </div>
+        <div class="F_Link F_Blog">
+          <a
+            href="https://blog.naver.com/PostList.naver?from=postList&blogId=mentpark123&categoryNo=14&currentPage=7"
+            style="text-decoration: none; color: rgb(3, 199, 90)"
+          >
+            <i class="fab fa-blogger" alt="naver_blog"></i>
+          </a>
+        </div>
+        <div class="F_Link F_Instar">
+          <a href="https://www.instagram.com/yim_ceul/">
+            <i class="fab fa-instagram" aria-hidden="true"></i>
+          </a>
+        </div>
+      </div>
+
+      <br />
+      © LeeSeJun. All rights reserved
+    </footer>
+  </body>
 </html>

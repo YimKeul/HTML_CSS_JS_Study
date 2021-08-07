@@ -36,16 +36,16 @@ intro.addEventListener("click", () =>
 );
 
 about.addEventListener("click", () =>
-  window.scrollTo({ top: c_a.offsetTop - 100, behavior: "smooth" })
+  window.scrollTo({ top: c_a.offsetTop - 150, behavior: "smooth" })
 );
 about_2.addEventListener("click", () =>
-  window.scrollTo({ top: c_a.offsetTop - 100, behavior: "smooth" })
+  window.scrollTo({ top: c_a.offsetTop - 200, behavior: "smooth" })
 );
 skill.addEventListener("click", () =>
-  window.scrollTo({ top: c_s.offsetTop - 100, behavior: "smooth" })
+  window.scrollTo({ top: c_s.offsetTop , behavior: "smooth" })
 );
 skill_2.addEventListener("click", () =>
-  window.scrollTo({ top: c_s.offsetTop - 100, behavior: "smooth" })
+  window.scrollTo({ top: c_s.offsetTop , behavior: "smooth" })
 );
 
 project.addEventListener("click", () =>
@@ -76,7 +76,7 @@ $(document).ready(function () {
 
     /*오른쪽 메뉴가 어바웃부터 나타남*/
 
-    if ($(this).scrollTop() > 600){
+    if ($(this).scrollTop() > 700){
       $("#remote").css({"display" :"block"});
     } else {
       $("#remote").css({"display" :"none"});
@@ -91,24 +91,24 @@ $(document).ready(function () {
       $("#list2").css("background-color", "transparent");
     }
 
-    if ($(this).scrollTop() > 900) {
+    if ($(this).scrollTop() > 1000) {
       $("#list2").css("background-color", "transparent");
     }
 
  
-    if ($(this).scrollTop() > 910) {
+    if ($(this).scrollTop() > 1200) {
       $("#list3").css("background-color", "#e5e5e5");
     } else {
       $("#list3").css("background-color", "transparent");
     }
 
-    if ($(this).scrollTop() > 1900) {
+    if ($(this).scrollTop() > 2800) {
       $("#list3").css("background-color", "transparent");
     }
 
  
 
-    if ($(this).scrollTop() > 2500) {
+    if ($(this).scrollTop() > 2900) {
       $("#list4").css("background-color", "#e5e5e5");
     } else {
       $("#list4").css("background-color", "transparent");
