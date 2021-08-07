@@ -84,12 +84,12 @@ body {
 }
 
 #remote {
-  
   width: 105px;
   position: fixed;
   top: 30%;
   right: 1%;
   display: none;
+  z-index: 1;
 }
 #remote a {
   color: #3a3a3a;
@@ -105,7 +105,7 @@ body {
   padding: 0 0 0 5px;
 }
 #remote ul > li:hover {
-  background :#e5e5e5;
+  background: #e5e5e5;
 }
 #remote img {
   margin-right: 7px;
@@ -157,8 +157,6 @@ body {
   height: 65%;
 }
 
-
-
 /*PERSONAL*/
 .PERSONAL {
   background-color: whitesmoke;
@@ -179,7 +177,8 @@ body {
   flex-flow: row wrap;
   justify-content: space-between;
   margin: 0;
-  width: 100%;
+  padding-left: 7.5rem;
+  padding-right: 7.5rem;
   -webkit-box-pack: justify;
 }
 .P_C_G {
@@ -222,26 +221,114 @@ body {
   font-size: 1rem;
 }
 
-
-
 /*SKILL*/
 .SKILL {
   background-color: whitesmoke;
+  padding-left: 10rem;
+  padding-right: 10rem;
+  height: 80em;
+}
+.S_Contents {
+  width: 100%;
   text-align: center;
 }
-.SKILL .S_Contents {
-  width: 100%;
-  height: 60em;
-}
-.SKILL .S_Title {
+.S_Title {
   padding-top: 2rem;
   margin-bottom: 20px;
   text-align: center;
   font-size: 2rem;
 }
+.S_Contents i {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  font-size: 3rem;
+  background: rgb(204, 218, 255);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+.S_Contents i:hover {
+  transform: scale(1.3);
+  background: rgb(111, 156, 242);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+/*S_I가 div태그  S_L이 ul 태그*/
+.S_I {
+  position: relative;
+  max-width: 1600px;
+  margin: 150px auto 0;
+  height: auto;
+  background-color: red;
+}
 
+.S_I img {
+  background-color: whitesmoke;
+  width: 8rem;
+  border-radius: 50%;
+  border: red solid 1px;
+  box-shadow: 0 20px 30px 0 rgba(65,58,58,.15);
+  cursor: pointer;
+}
 
+.S_I img:hover{
+  will-change: transform;
+  transform: scale(1.05);
+  opacity: .9;
+  box-shadow: 0 20px 30px 0 rgba(65,58,58,.25)
+}
+.S_L {
+  position: relative;
+  z-index: 1;
+  margin: 0 auto;
+ 
+}
 
+.S_L_Item {
+  position: absolute;
+  transition: left 0.7s, top 0.7s;
+}
+.S_L_Item:nth-child(1) {
+  top: 0;
+  left: 280px
+}
+
+.S_L_Item:nth-child(2) {
+  top: 40px;
+  left: 800px
+}
+
+.S_L_Item:nth-child(3) {
+  top: 310px;
+  left: 100px;
+}
+
+.S_L_Item:nth-child(4) {
+  top: 260px;
+  left: 530px
+}
+
+.S_L_Item:nth-child(5) {
+  top: 240px;
+  left: 930px
+}
+
+.S_L_Item:nth-child(6) {
+  top: 540px;
+  left: 310px
+}
+
+.S_L_Item:nth-child(7) {
+  top: 490px;
+  left: 800px
+}
+.S_L_Item:nth-child(8) {
+  top: 750px;
+  left: 500px
+}
 /*PROJECT*/
 .PROJECT {
   text-align: center;
@@ -296,3 +383,24 @@ body {
 }
 
 
+
+
+/* @-webkit-keyframes scollDown {
+  50% {
+      transform: translateY(100%)
+  }
+
+  100% {
+      transform: translateY(200%)
+  }
+}
+
+@keyframes scollDown {
+  50% {
+      transform: translateY(100%)
+  }
+
+  100% {
+      transform: translateY(200%)
+  }
+} */
