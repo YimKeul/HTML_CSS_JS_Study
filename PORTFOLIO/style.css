@@ -11,6 +11,7 @@ ul {
 body {
   margin: 0;
   background-color: darkgray;
+  overflow-x: hidden ;
 }
 
 /*navbar*/
@@ -227,6 +228,7 @@ body {
   padding-left: 10rem;
   padding-right: 10rem;
   height: 90em;
+  
 }
 .S_Contents {
   width: 100%;
@@ -265,6 +267,7 @@ body {
 
 /*ul태그*/
 .S_L {
+  width: 80%;
   position: relative;
   z-index: 1;
   margin: 0 auto;
@@ -288,41 +291,41 @@ body {
 
 /*위치용*/
 .S_L_Item:nth-child(1) {
-  left: 280px
+  left: 130px
 }
 
 .S_L_Item:nth-child(2) {
  
-  left: 800px
+  left: 700px
 }
 
 .S_L_Item:nth-child(3) {
  
-  left: 100px;
+  left: 30px;
 }
 
 .S_L_Item:nth-child(4) {
  
-  left: 530px
+  left: 400px
 }
 
 .S_L_Item:nth-child(5) {
 
-  left: 930px
+  left: 800px
 }
 
 .S_L_Item:nth-child(6) {
   
-  left: 310px
+  left: 230px
 }
 
 .S_L_Item:nth-child(7) {
 
-  left: 800px
+  left: 700px
 }
 .S_L_Item:nth-child(8) {
   
-  left: 500px
+  left: 450px
 }
 /*PROJECT*/
 .PROJECT {
