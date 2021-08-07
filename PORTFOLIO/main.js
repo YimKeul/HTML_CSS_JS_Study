@@ -83,7 +83,7 @@ $(document).ready(function () {
     }
     open_chatroom();
     /*오른쪽 메뉴 스크롤*/
-    //어바웃 스크롤
+   
 
     if ($(this).scrollTop() > 600) {
       $("#list2").css("background-color", "#e5e5e5");
@@ -95,19 +95,18 @@ $(document).ready(function () {
       $("#list2").css("background-color", "transparent");
     }
 
-    //포트폴리오1 스크롤
-
+ 
     if ($(this).scrollTop() > 910) {
       $("#list3").css("background-color", "#e5e5e5");
     } else {
       $("#list3").css("background-color", "transparent");
     }
 
-    if ($(this).scrollTop() > 1600) {
+    if ($(this).scrollTop() > 1900) {
       $("#list3").css("background-color", "transparent");
     }
 
-    //포트폴리오2 스크롤
+ 
 
     if ($(this).scrollTop() > 2500) {
       $("#list4").css("background-color", "#e5e5e5");
