@@ -27,8 +27,11 @@
     padding: 10px 2px;
   }
   .navbar_toogleBTN {
-    margin-top: 40px;
+   top: 50px;
     display: block;
+  }
+  .navbar_menu a{
+    padding-left: 3%;
   }
 
   .navbar_menu.active {
@@ -50,7 +53,9 @@
   .I_monitor {
     padding: 0;
     margin-left: 2%;
+    margin-top: 100px;
     width: 480px;
+    height: 300px;
   }
 
   .I_Sub_Text {

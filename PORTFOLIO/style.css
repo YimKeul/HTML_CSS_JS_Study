@@ -6,6 +6,8 @@ a {
 }
 ul, li {
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 /*body*/
 body {
@@ -61,7 +63,7 @@ body {
 
 .navbar_logo p {
   padding-left: 10px;
-  padding-top: 30px;
+  padding-top: 15%;
   font-size: 20px;
 }
 
@@ -73,7 +75,7 @@ body {
 .navbar_menu {
   display: flex;
   list-style: none;
-  padding-top: 10px;
+  padding-top: 3%;
   padding-left: 0;
 }
 .navbar_toogleBTN {
