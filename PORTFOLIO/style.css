@@ -11,7 +11,9 @@ ul, li {
 body {
   margin: 0;
   background-color: whitesmoke;
-  overflow-x: hidden ;
+  overflow-x: hidden !important;
+  /* width: 100%; */
+  touch-action: none;
 }
 
 /*navbar*/
@@ -164,7 +166,7 @@ body {
 /*PERSONAL*/
 .PERSONAL {
   background-color: whitesmoke;
-  width: 100%;
+  /* width: 100%; */
   color: black;
   padding-bottom: 13rem;
 }
@@ -236,7 +238,7 @@ body {
   
 }
 .S_Contents {
-  width: 100%;
+  /* width: 100%; */
   text-align: center;
 }
 .S_Title {
@@ -385,7 +387,7 @@ body {
   text-align: center;
   background-color: rgb(64, 72, 83);
   bottom: 0;
-  width: 100%;
+  /* width: 100%; */
   color: whitesmoke;
   padding-bottom: 20px;
 }
