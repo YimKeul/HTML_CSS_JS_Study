@@ -1,5 +1,8 @@
 /*타블렛*/
 @media screen and (max-width: 1023px) {
+  body{
+    touch-action: pan-y;
+  }
   .navbar {
     justify-content: space-between;
     flex-direction: column;
@@ -35,10 +38,6 @@
     padding-bottom: 0;
   }
 
-
-  /* body {
-    overflow-x: hidden;
-  } */
   .INTRO{
     padding-left: 3%;
     padding-right: 3%;
@@ -69,9 +68,7 @@
     width: 50%;
     margin-bottom: 2rem;
   }
-  .S_L_Item{
-  
-  }
+ 
 
   .S_Contents i {
     line-height: 5rem;
@@ -149,10 +146,13 @@
   .I_monitor {
     display: none;
   }
-  .I_Text {
-    width: 100%;
+  .INTRO{
     padding: 0;
-    padding-top: 15%;
+  }
+  .I_Text {
+   
+    padding: 0;
+    padding-top: 30%;
     text-align: center;
   }
   #remote {
