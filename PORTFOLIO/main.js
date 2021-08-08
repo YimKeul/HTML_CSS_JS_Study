@@ -13,54 +13,45 @@ mainlogo.addEventListener("click", () =>
 );
 
 const profile = document.querySelector(".I_More");
-profile.addEventListener("click", () =>
-  window.scrollTo({ top: profile.offsetTop + 100, behavior: "smooth" })
-);
-
 const about = document.querySelector(".n_m_a");
 const skill = document.querySelector(".n_m_s");
 const project = document.querySelector(".n_m_p");
 
-const intro = document.querySelector("#list1");
-const about_2 = document.querySelector("#list2");
-const skill_2 = document.querySelector("#list3");
-const project_2 = document.querySelector("#list4");
+
 
 const c_i = document.querySelector(".INTRO");
 const c_a = document.querySelector(".PERSONAL");
 const c_s = document.querySelector(".SKILL");
 const c_p = document.querySelector(".PROJECT");
 
-intro.addEventListener("click", () =>
-  window.scrollTo({ top: c_i.offsetTop, behavior: "smooth" })
+profile.addEventListener("click", () =>
+  window.scrollTo({ top: c_a.offsetTop-200, behavior: "smooth" })
 );
 
+
 about.addEventListener("click", () =>
-  window.scrollTo({ top: c_a.offsetTop - 150, behavior: "smooth" })
-);
-about_2.addEventListener("click", () =>
   window.scrollTo({ top: c_a.offsetTop - 200, behavior: "smooth" })
 );
 skill.addEventListener("click", () =>
   window.scrollTo({ top: c_s.offsetTop , behavior: "smooth" })
 );
-skill_2.addEventListener("click", () =>
-  window.scrollTo({ top: c_s.offsetTop , behavior: "smooth" })
-);
 
 project.addEventListener("click", () =>
-  window.scrollTo({ top: c_p.offsetTop - 100, behavior: "smooth" })
+window.scrollTo({ top: c_p.offsetTop - 100, behavior: "smooth" })
 );
-project_2.addEventListener("click", () =>
-  window.scrollTo({ top: c_p.offsetTop - 100, behavior: "smooth" })
-);
+
+
+
 
 
 function open_chatroom(){
   var windowWidth = $( window ).width();
   if(windowWidth < 575) {
   //창 가로 크기가 500 미만일 경우
- 
+  profile.addEventListener("click", () =>
+  window.scrollTo({ top: c_a.offsetTop, behavior: "smooth" })
+);
+
   $("#remote").css({"display" :"none"});
   } else {
   //창 가로 크기가 500보다 클 경우
