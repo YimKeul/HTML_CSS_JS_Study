@@ -19,7 +19,10 @@
     height: auto;
     margin: 0;
   }
-
+  /*밑줄 호버 삭제*/
+  .navbar_menu li a:hover::after {
+    width: 0;
+  }
   .navbar_menu li {
     width: 100%;
     text-align: left;
@@ -85,6 +88,9 @@
     position: unset;
     text-align: center;
   }
+  .slide-control{
+    display: none;
+  }
 
 }
 /*모바일*/
@@ -145,6 +151,11 @@
     left: 60%
   }
 
+  /* .slide-pagelist li {
+    width: 20%  
+  }   */
+
+
 }
 
 @media screen and (max-width: 575px) {
@@ -170,8 +181,7 @@
     padding: 0;
   }
 
-
-
+  
 }
 
 

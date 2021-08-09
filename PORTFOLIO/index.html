@@ -16,6 +16,7 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="./main.js" defer="defer"></script>
     <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
+    <link rel="stylesheet" href="./slide.css">
     <link rel="stylesheet" href="./mediastyle.css" />
     <title>SEJUN'S PORTFOLIO</title>
   </head>
@@ -178,67 +179,67 @@
     <section class="SKILL" id="SKILL">
       <div class="S_Title">SKILL</div>
       <div class="S_Contents">
-        <i class="fab fa-java"></i>
-        <i class="fab fa-cuttlefish"></i>
-        <i class="fab fa-python"></i>
-        <i class="fab fa-js-square"></i>
-        <i class="fab fa-html5"></i>
-        <i class="fab fa-css3-alt"></i>
-        <i class="fab fa-react"></i>
+       
+        <i class="fab fa-java" ><a href=""></a></i>
+        <i class="fab fa-cuttlefish" ></i>
+        <i class="fab fa-python" ></i>
+        <i class="fab fa-js-square" ></i>
+        <i class="fab fa-html5" ></i>
+        <i class="fab fa-css3-alt" ></i>
+        <i class="fab fa-react" ></i>
         <i class="fab fa-git-alt"></i>
       </div>
 
       <div class="S_I">
         <div class="S_L_Item">
-          <div class="front">
+          <div class="front" >
             <img src="./image/resize/java.png" alt="java" />
           </div>
-          <div class="back"><p>test1</p></div>
+          <div class="back"><p>80%</p></div>
         </div>
         <div class="S_L_Item">
           <div class="front">
             <img src="./image/resize/c++.png" alt="c++" />
           </div>
-          <div class="back"><p>test2</p></div>
+          <div class="back"><p>50%</p></div>
         </div>
         <div class="S_L_Item">
-          <div class="front">
+          <div class="front" >
             <img src="./image/resize/python.png" alt="python" />
           </div>
-          <div class="back"><p>test3</p></div>
+          <div class="back"><p>50%</p></div>
         </div>
         <div class="S_L_Item">
-          <div class="front">
+          <div class="front" >
             <img src="./image/resize/js2.png" alt="js" />
           </div>
-          <div class="back"><p>test4</p></div>
+          <div class="back"><p>60%</p></div>
         </div>
 
         <div class="S_L_Item">
-          <div class="front">
+          <div class="front" >
             <img src="./image/resize/html.png" alt="html" />
           </div>
-          <div class="back"><p>test5</p></div>
+          <div class="back"><p>70&</p></div>
         </div>
         <div class="S_L_Item">
-          <div class="front">
+          <div class="front" >
             <img src="./image/resize/css.png" alt="css" />
           </div>
-          <div class="back"><p>test6</p></div>
+          <div class="back"><p>65%</p></div>
         </div>
         <div class="S_L_Item">
-          <div class="front">
+          <div class="front" >
             <img src="./image/resize/react.png" alt="react" />
           </div>
-
-          <div class="back"><p>test7</p></div>
+          <div class="back"><p>20%</p></div>
         </div>
         <div class="S_L_Item">
-          <div class="front">
+          <div class="front" >
             <img src="./image/resize/git.png" alt="git" />
           </div>
 
-          <div class="back"><p>test8</p></div>
+          <div class="back"><p>50%</p></div>
         </div>
       </div>
     </section>
@@ -246,15 +247,87 @@
   
 
     <section class="PROJECT" id="PROJECT">
-      <p>PROJECT</p>
-      군 장병 모바일 휴가증
-      <br />
-      웹사이트 제작 스터디
-      <br />
-      스타트업(예정)
-      <br />
-      포트폴리오 사이트 제작(RN으로 App환경에서도 잘 구현되는지 체크된다고
-      내용추가)
+      <div class="P_Title">PROJECT</div>
+
+      <div class="section">
+        <input type="radio" name="slide" id="slide01" checked>
+        <input type="radio" name="slide" id="slide02">
+        <input type="radio" name="slide" id="slide03">
+        <input type="radio" name="slide" id="slide04">
+        <div class="slidewrap">
+          
+          <ul class="slidelist">
+            <!-- 슬라이드 영역 -->
+            <li class="slideitem">
+              <a>
+                <div class="textbox">
+                  <h3> 군 장병 모바일 휴가증</h3>
+                  <p>코멘트 위치</p>
+                </div>
+                <img src="./img/slide01.jpg">
+              </a>
+            </li>
+            <li class="slideitem">
+              <a>
+                <div class="textbox">
+                  <h3>웹사이트 제작 스터디</h3>
+                  <p>코멘트 위치</p>
+                </div>
+                <img src="./img/slide02.jpg">
+              </a>
+            </li>
+            <li class="slideitem">
+              <a>
+                <div class="textbox">
+                  <h3>포트폴리오 사이트 제작(RN으로 App환경에서도 잘 구현되는지 체크된다고 내용추가)</h3>
+                  <p>코멘트 위치</p>
+                </div>
+                <img src="./img/slide03.jpg">
+              </a>
+            </li class="slideitem">
+
+
+            <li class="slideitem">
+              <a>
+                <div class="textbox">
+                  <h3>스타트업</h3>
+                  <p>코멘트 위치</p>
+                </div>
+                <img src="./img/slide03.jpg">
+              </a>
+            </li class="slideitem">
+            <!-- 좌,우 슬라이드 버튼 -->
+            <div class="slide-control">
+              <div>
+                <label for="slide04" class="left"></label>
+                <label for="slide02" class="right"></label>
+              </div>
+              <div>
+                <label for="slide01" class="left"></label>
+                <label for="slide03" class="right"></label>
+              </div>
+              <div>
+                <label for="slide02" class="left"></label>
+                <label for="slide04" class="right"></label>
+              </div>
+              <div>
+                <label for="slide03" class="left"></label>
+                <label for="slide01" class="right"></label>
+              </div>
+            </div>
+      
+          </ul>
+          <!-- 페이징 -->
+          <ul class="slide-pagelist">
+            <li><label for="slide01"></label></li>
+            <li><label for="slide02"></label></li>
+            <li><label for="slide03"></label></li>
+            <li><label for="slide04"></label></li>
+          </ul>
+        </div>
+      
+        
+      </div>
     </section>
 
     <footer class="FOOTER">
