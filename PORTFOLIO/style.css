@@ -1,3 +1,7 @@
+@font-face {
+  font-family: "nanum";
+  src: url("./font/NanumSquare_acB.ttf");
+}
 html {
   scroll-behavior: smooth;
 }
@@ -11,6 +15,7 @@ ul, li {
 }
 /*body*/
 body {
+  font-family: "nanum";
   margin: 0;
   background-color: whitesmoke;
   overflow-x: hidden !important;
@@ -234,19 +239,21 @@ body {
   background-color: whitesmoke;
   padding-left: 7.5rem;
   padding-right: 7.5rem;
-  padding-bottom: 5%;
+  padding-bottom: 13rem;
 
   
 }
 .S_Contents {
   /* width: 100%; */
   text-align: center;
+
 }
 .S_Title {
   padding-top: 2rem;
-  margin-bottom: 20px;
+  margin-bottom: 33px;
   text-align: center;
   font-size: 2rem;
+  padding-bottom: 3rem;
 }
 .S_Contents i {
   padding-left: 1.5rem;
