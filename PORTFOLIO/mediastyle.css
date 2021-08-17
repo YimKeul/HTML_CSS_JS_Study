@@ -1,6 +1,6 @@
 /*타블렛*/
 @media screen and (max-width: 1023px) {
-  body{
+  body {
     touch-action: pan-y;
   }
   .navbar {
@@ -31,13 +31,12 @@
     padding: 10px 2px;
   }
   .navbar_toogleBTN {
-   top: 50px;
+    top: 50px;
     display: block;
   }
-  .navbar_menu a{
+  .navbar_menu a {
     padding-left: 3%;
   }
-
 
   .navbar_menu.active {
     display: flex;
@@ -46,7 +45,7 @@
     padding-bottom: 0;
   }
 
-  .INTRO{
+  .INTRO {
     padding-left: 3%;
     padding-right: 3%;
   }
@@ -78,22 +77,18 @@
     width: 50%;
     margin-bottom: 2rem;
   }
- 
 
   .S_Contents i {
     line-height: 5rem;
     font-size: 2.5rem;
-
   }
-  .S_I{
- 
+  .S_I {
     position: unset;
     text-align: center;
   }
-  .slide-control{
+  .slide-control {
     display: none;
   }
-
 }
 /*모바일*/
 @media screen and (max-width: 767px) {
@@ -106,78 +101,66 @@
     font-size: 2.5rem;
   }
 
-  .I_monitor{
-    
+  .I_monitor {
     width: 50%;
   }
-  .I_Text{
+  .I_Text {
     padding-left: 4%;
   }
 
   .S_L_Item:nth-child(1) {
-    left: 0%
-  }
-  
-  .S_L_Item:nth-child(2) {
-   
-    left: 60%
-  }
-  
-  .S_L_Item:nth-child(3) {
-   
     left: 0%;
   }
-  
-  .S_L_Item:nth-child(4) {
-   
-    left: 60%
+
+  .S_L_Item:nth-child(2) {
+    left: 60%;
   }
-  
-  
-  
+
+  .S_L_Item:nth-child(3) {
+    left: 0%;
+  }
+
+  .S_L_Item:nth-child(4) {
+    left: 60%;
+  }
+
   .S_L_Item:nth-child(5) {
     left: 00%;
   }
-  
+
   .S_L_Item:nth-child(6) {
-    
-    left: 60%
+    left: 60%;
   }
-  
+
   .S_L_Item:nth-child(7) {
-  
-    left: 0%
+    left: 0%;
   }
   .S_L_Item:nth-child(8) {
-    
-    left: 60%
+    left: 60%;
   }
 
   .section .slidelist .textbox h3 {
     font-size: 1.5rem;
   }
-  .section .slidelist .textbox p{
+  .section .slidelist .textbox p {
     font-size: 1rem;
   }
-  .slide-pagelist{
+  .slide-pagelist {
     padding: 0;
-
-}
-  .slide-pagelist > li > label{
-  margin : 20px 8px;
-}
-
+  }
+  .slide-pagelist > li > label {
+    margin: 20px 8px;
+  }
 }
 
 @media screen and (max-width: 575px) {
   .I_monitor {
     display: none;
   }
-  .INTRO{
+  .INTRO {
     padding: 0;
   }
   .I_Text {
-   
     padding: 0;
     padding-top: 30%;
     text-align: center;
@@ -185,32 +168,31 @@
   #remote {
     display: none;
   }
-  .P_Contents{
+  .P_Contents {
     padding: 0;
   }
-  .SKILL{
+  .SKILL {
     padding: 0;
   }
-  .PROJECT{
+  .PROJECT {
     padding: 0 5%;
-    
   }
-  .textbox{
+  .textbox {
     display: none;
   }
 
-  .slide-pagelist{
-    padding: 20px;
+  .slide-pagelist {
+    padding: 0px;
+  }
+  .slide-pagelist > li > label {
+ 
+    padding: 8px 30px;
+ 
+    margin: 20px 2px;
+ 
+  }
 
+  .section .slidelist > li > a img {
+    width: 100%;
+  }
 }
-  .slide-pagelist > li > label{
-  margin : 20px 10px;
-}
-.section .slidelist > li > a img {width :100% ; }
-
-}
-
-
-
-
-
