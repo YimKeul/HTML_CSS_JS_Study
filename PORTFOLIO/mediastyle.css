@@ -153,10 +153,19 @@
     left: 60%
   }
 
-  /* .slide-pagelist li {
-    width: 20%  
-  }   */
+  .section .slidelist .textbox h3 {
+    font-size: 1.5rem;
+  }
+  .section .slidelist .textbox p{
+    font-size: 1rem;
+  }
+  .slide-pagelist{
+    padding: 0;
 
+}
+  .slide-pagelist > li > label{
+  margin : 20px 8px;
+}
 
 }
 
@@ -182,8 +191,23 @@
   .SKILL{
     padding: 0;
   }
+  .PROJECT{
+    padding: 0 5%;
+    
+  }
+  .textbox{
+    display: none;
+  }
 
-  
+  .slide-pagelist{
+    padding: 20px;
+
+}
+  .slide-pagelist > li > label{
+  margin : 20px 10px;
+}
+.section .slidelist > li > a img {width :100% ; }
+
 }
 
 

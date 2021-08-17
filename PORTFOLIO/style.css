@@ -336,7 +336,7 @@ body {
 
 /*위치용*/
 .S_L_Item:nth-child(1) {
-  left: 20%
+  left: 30%
 }
 
 .S_L_Item:nth-child(2) {
@@ -346,7 +346,7 @@ body {
 
 .S_L_Item:nth-child(3) {
  
-  left: 5%;
+  left: 15%;
 }
 
 .S_L_Item:nth-child(4) {
@@ -354,15 +354,13 @@ body {
   left: 45%
 }
 
-
-
 .S_L_Item:nth-child(5) {
   left: 80%;
 }
 
 .S_L_Item:nth-child(6) {
   
-  left: 10%
+  left: 28%
 }
 
 .S_L_Item:nth-child(7) {
@@ -387,6 +385,7 @@ body {
   margin-bottom: 20px;
   text-align: center;
   font-size: 2rem;
+  padding-bottom: 100px;
 }
 
 
