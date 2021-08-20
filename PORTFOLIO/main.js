@@ -85,17 +85,17 @@ $(document).ready(function () {
       $("#list3").css("background-color", "transparent");
     }
 
-    if ($(this).scrollTop() > 2800) {
+    if ($(this).scrollTop() > 3000) {
       $("#list3").css("background-color", "transparent");
     }
 
-    if ($(this).scrollTop() > 2900) {
+    if ($(this).scrollTop() > 3100) {
       $("#list4").css("background-color", "#e5e5e5");
     } else {
       $("#list4").css("background-color", "transparent");
     }
 
-    if ($(this).scrollTop() > 3300) {
+    if ($(this).scrollTop() > 4000) {
       $("#list4").css("background-color", "transparent");
     }
   });
