@@ -122,7 +122,9 @@
             </div>
             <div class="P_C_T">
               <div class="P_C_T_L">AGE</div>
-              <div class="P_C_T_V">24 (99.02.10)</div>
+              <!-- <div class="P_C_T_V">24 (99.02.10)</div> -->
+              <div class="P_C_T_V" id = "mytext"></div>
+              <!-- <input type="text" id="mytext" class = "P_C_T_V"> -->
             </div>
           </div>
         </div>
@@ -359,5 +361,17 @@
       <br />
       © LeeSeJun. All rights reserved
         </footer>
+
+
+<script type="text/javascript">
+  var this__ = new Date()
+  var this_year = this__.getFullYear()
+
+  var age = this_year - 1999 + 1
+  
+  document.getElementById("mytext").innerText = age + " (99.02.10)"
+
+
+</script>
   </body>
 </html>
